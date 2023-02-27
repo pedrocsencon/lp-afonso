@@ -25,26 +25,26 @@ export default function Home() {
         <title>Desafio Posicionado Digital - Afonso Molina</title>
       </Head>
       <Flex direction={isLargerThan1100 ? 'row' : 'column'} paddingBottom={isLargerThan1100 ? 24 : 8} id='background' justifyContent='space-between' backgroundImage="url('../assets/backgrond.png')" width='100%' paddingX={isLargerThan1100 ? 36 : 4} backgroundColor={'white'}>
-        <Stack alignItems={isLargerThan1100 ? 'initial' : 'center'} textAlign={isLargerThan1100 ? 'initial' : 'center'} zIndex={999} marginTop={12} spacing={6} width={isLargerThan1100 ? '50%' : '100%'}>
+        <Stack alignItems={isLargerThan1100 ? 'initial' : 'center'} marginLeft={isLargerThan1100 ? 12 : 0} textAlign={isLargerThan1100 ? 'initial' : 'center'} zIndex={999} marginTop={8} spacing={6} width={isLargerThan1100 ? '45%' : '100%'}>
           <Box height={24}>
             <Image alt='logo' src={logo} />
           </Box>
-          <Stack paddingY={1} width={['90%', '80%', '60%', '45%']} justifyContent='center' borderRadius={8} background='orange.500' direction='row' spacing={2} alignItems='center'>
+          <Stack paddingY={1} width={['90%', '80%', '60%', '60%']} justifyContent='center' borderRadius={8} background='orange.500' direction='row' spacing={2} alignItems='center'>
             <FaCalendarMinus size={12} color='white' />
-            <Text textColor='white' fontSize='sm'>4 dias de aulas ao vivo e gratuitas</Text>
+            <Text textColor='white' fontSize='md'>4 dias de aulas ao vivo e gratuitas</Text>
           </Stack>
           <Text fontSize='3xl' lineHeight={1.2} fontWeight='bold'>
             Transforme desconhecidos em clientes e alcance a segurança de ter dinheiro entrando na conta todos os dias
           </Text>
-          <Stack paddingY={2} width={['90%', '80%', '60%', '45%']} justifyContent='center' borderRadius={8} borderWidth={2} borderColor='orange.500' direction='row' spacing={2} alignItems='center'>
+          <Stack paddingY={2} width={['90%', '80%', '60%', '60%']} justifyContent='center' borderRadius={8} borderWidth={2} borderColor='orange.500' direction='row' spacing={2} alignItems='center'>
             <FaCalendarMinus size={14} color='#ff8000' />
-            <Text textColor='orange.500'>09 a 12 de março</Text>
-            <Text textColor='orange.500'>|</Text>
+            <Text fontWeight='bold' textColor='orange.500'>09 a 12 de março</Text>
+            <Text fontWeight='bold' textColor='orange.500'>|</Text>
             <FaClock size={14} color='#ff8000' />
-            <Text textColor='orange.500'>às 20h</Text>
+            <Text fontWeight='bold' textColor='orange.500'>às 20h</Text>
           </Stack>
           <Stack spacing={4}>
-            <Text fontWeight='semibold'>
+            <Text fontWeight='bold'>
               Você vai aprender a vender no Instagram:
             </Text>
             <BulletItem Icon={FaUserAlt} text='Sem trabalho adicional' />
@@ -69,7 +69,7 @@ export default function Home() {
           }
         </Stack>
         {isLargerThan1100 ? (
-          <Box right={['3rem', '5rem', '7rem']} position='absolute' width={'35rem'}>
+          <Box right={['3rem', '5rem', '10rem']} position='absolute' width={'35rem'}>
             <Image alt='illustration' src={illustration} />
           </Box>
         )
