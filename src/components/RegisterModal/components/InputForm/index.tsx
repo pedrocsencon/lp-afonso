@@ -1,5 +1,4 @@
 import { Input, Stack, Text } from "@chakra-ui/react";
-import { HTMLInputTypeAttribute } from "react";
 import { InputFormProps } from "./types";
 
 

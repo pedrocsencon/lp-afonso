@@ -10,13 +10,3 @@ export type AddUserInListProps ={
    contact: number,
    status: number
 }
-
-export type RegisterUserResponse = {
-   contact: {
-      email: string;
-      firstName: string;
-      lastName: string;
-      phone: string;
-      id: string,
-   }
-}

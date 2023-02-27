@@ -2,11 +2,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
-    // fonts: {
-    //   body: "Outfit, sans-serif",
-    //   heading: "Bree Serif, serif",
-    //   mono: "Menlo, monospace",
-    // },
     colors: {
         transparent: 'transparent',
         orange: {
