@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Stack, Text, useMediaQuery } from "@chakra-ui/react";
+import Head from "next/head";
 import Image from "next/image";
 import { RiAlertFill } from 'react-icons/ri'
 import alertIcon from '../assets/alert-icon.png'
@@ -9,6 +10,10 @@ export default function Obrigado() {
   const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
 
     return (
+       <>
+        <Head>
+        <title>Falta só uma coisa! - Afonso Molina</title>
+      </Head>
         <Stack textAlign='center' spacing={6} paddingY={12} id='background' alignItems='center' backgroundImage="url('../assets/backgrond.png')" width='100%' paddingX={isLargerThan900 ? 24 : 4} backgroundColor={'white'}>
             <Text fontSize='2xl' fontWeight='bold'>Falta só uma coisa!</Text>
             <Flex width={['95%', '70%', '50%']} paddingY={2} justifyContent='center' alignItems='center' background='orange.500' borderRadius={8}>
@@ -47,5 +52,6 @@ export default function Obrigado() {
                 </Text>
             </Stack>
         </Stack>
+       </>
     )
 }

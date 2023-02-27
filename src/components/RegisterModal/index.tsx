@@ -35,15 +35,8 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                     contact: res.data.contact.id, list: 4, status: 1
                 })
                 clearForm();
-                toast({
-                    title: 'Sucesso!',
-                    description: 'Cadastro efetuado com sucesso',
-                    status: 'success',
-                    duration: 9000,
-                    isClosable: true,
-                })
                 onClose();
-                route.push('/obrigado')
+                window.open('https://www.afonsomolina.com.br/obrigado')
             },
             onError: (res: any) => {
                 toast({
