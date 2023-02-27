@@ -10,7 +10,6 @@ import BulletItem from '@/components/BulletItem'
 import { motion } from 'framer-motion'
 import { useCallback, useState } from 'react'
 import RegisterModal from '@/components/RegisterModal'
-import { LPMetaPixel } from '@/components/Pixels/LPMetaPixel'
 
 export default function Home() {
   const ButtonMotion = motion(Button)
@@ -22,7 +21,6 @@ export default function Home() {
 
   return (
     <>
-    <LPMetaPixel/>
     <Head>
     <title>Desafio Posicionado Digital - Afonso Molina</title>
     </Head>
