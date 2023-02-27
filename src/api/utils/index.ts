@@ -5,8 +5,10 @@ import { RawResponse } from './type';
 export default function parseResponseData<T>(
   response: AxiosResponse<RawResponse<T>> | AxiosResponse<T>,
 ): T {
-  if (typeof response.data === `object` && `data` in response.data) {
-    return response.data.data;
+  if(response.data){
+    if (typeof response.data === `object` && `data` in response.data) {
+      return response.data.data;
+    }
   }
   return response.data;
 }
