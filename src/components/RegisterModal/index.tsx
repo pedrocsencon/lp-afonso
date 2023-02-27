@@ -36,7 +36,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                 })
                 clearForm();
                 onClose();
-                window.open('https://www.afonsomolina.com.br/obrigado')
+                window.location.replace('https://www.afonsomolina.com.br/obrigado')
             },
             onError: (res: any) => {
                 toast({
