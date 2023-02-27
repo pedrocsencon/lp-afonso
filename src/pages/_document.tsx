@@ -1,3 +1,4 @@
+import { GoogleBodyPixel } from '@/components/Pixels/GoogleBodyPixel'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -22,6 +23,7 @@ export default function Document() {
       </Head>
       <body>
         <Main />
+        <GoogleBodyPixel/>
         <NextScript />
       </body>
     </Html>
