@@ -10,24 +10,24 @@ export default function Obrigado() {
 
     return (
         <Stack textAlign='center' spacing={6} paddingY={12} id='background' alignItems='center' backgroundImage="url('../assets/backgrond.png')" width='100%' paddingX={isLargerThan900 ? 24 : 4} backgroundColor={'white'}>
-            <Text fontSize='lg' fontWeight='bold'>Falta só uma coisa!</Text>
+            <Text fontSize='2xl' fontWeight='bold'>Falta só uma coisa!</Text>
             <Flex width={['95%', '70%', '50%']} paddingY={2} justifyContent='center' alignItems='center' background='orange.500' borderRadius={8}>
                 <RiAlertFill size={18} color='white' />
                 <Text marginLeft={2} fontWeight='bold' fontSize={['xs', 'md', 'md']} textColor='white'>
                     SUA INSCRIÇÃO AINDA NÃO FOI CONFIRMADA
                 </Text>
             </Flex>
-            <Text fontSize='lg'>Para garantir sua vaga, basta seguir as instruções abaixo:</Text>
+            <Text width={64} fontSize='lg'>Para garantir sua vaga, basta seguir as instruções abaixo:</Text>
             <Box>
                 <Image alt="alert" width={60} src={alertIcon} />
             </Box>
-            <Text fontSize='lg'>
-                Em breve você receberá um e-mail, para confirmar <strong>é só abrir e clicar no link que te enviei</strong>.
+            <Text fontSize='lg' width={['90%', '60%' ,'40%']}>
+                Em breve você receberá um e-mail, para confirmar é só abrir <strong> e clicar no link que te enviei</strong>.
             </Text>
             <Box>
                 <Image alt="email" width={60} src={emailIcon} />
             </Box>
-            <Text fontSize='lg'>
+            <Text fontSize='lg' width={['90%', '65%' ,'45%']}>
                 A nossa conversa vai acontecer por e-mail, é por lá que te mandarei tudo que você precisa saber sobre o nosso desafio.
             </Text>
             <Text fontSize='2xl' fontWeight='bold'>

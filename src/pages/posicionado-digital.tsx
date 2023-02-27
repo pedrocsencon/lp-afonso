@@ -44,7 +44,7 @@ export default function Home() {
             <Text fontWeight='bold' textColor='white'>às 20h</Text>
           </Stack>
           <Stack spacing={4}>
-            <Text fontWeight='bold'>
+            <Text fontWeight='bold' fontSize={17}>
               Você vai aprender a vender no Instagram:
             </Text>
             <BulletItem Icon={FaUserAlt} text='Sem trabalho adicional' />
