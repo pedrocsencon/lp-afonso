@@ -5,7 +5,7 @@ import { api } from "./api";
 export const useRegisterUser = () => {
    return useMutation((payload: User) =>
      api
-       .post(`/contacts`, {
+       .post(`/contact/sync`, {
          contact: {
             firstName: payload.firstName,
                      lastName: payload.lastName,
