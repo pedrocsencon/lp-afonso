@@ -33,10 +33,14 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
             onSuccess: (res) => {
                 addInList({
                     contact: res.data.contact.id, list: 4, status: 1
+                },{
+                    onSuccess: () => {
+                        window.location.replace('https://www.afonsomolina.com.br/obrigado')
+                    }
                 })
                 clearForm();
                 onClose();
-                window.location.replace('https://www.afonsomolina.com.br/obrigado')
+                
             },
             onError: (res: any) => {
                 toast({
