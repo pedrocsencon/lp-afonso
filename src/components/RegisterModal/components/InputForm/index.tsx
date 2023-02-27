@@ -20,6 +20,8 @@ export default function InputForm({
         textColor='orange.500'
         borderColor="orange.500"
         variant="outline"
+        height={12}
+        fontSize='lg'
         value={value}
         type={type}
         placeholder={placeholder}

@@ -8,7 +8,6 @@ import { useRouter } from "next/router";
 
 export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
     const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const { mutate: addUser, isLoading: loadingRegister } = useRegisterUser()
@@ -18,7 +17,6 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
 
     function clearForm() {
         setFirstName("");
-        setLastName("");
         setEmail("");
         setPhone("");
     }
@@ -29,7 +27,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
         addUser({
             email,
             firstName,
-            lastName,
+            lastName: '',
             phone,
         }, {
             onSuccess: (res) => {
@@ -61,14 +59,13 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
 
     return (
         <>
-            <Modal size={'2xl'} isOpen={isOpen} onClose={onClose}>
+            <Modal size={'lg'} isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent>
                     <ModalHeader>Cadastrar-se</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
                         <Stack paddingX={[2, 4, 8]}>
-                            <Stack direction='row' width='100%'>
                                 <InputForm
                                     field="Nome"
                                     placeholder="Seu nome"
@@ -76,14 +73,6 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                                     type='text'
                                     value={firstName}
                                 />
-                                <InputForm
-                                    field="Sobrenome"
-                                    placeholder="Seu sobrenome"
-                                    setValue={setLastName}
-                                    type='text'
-                                    value={lastName}
-                                />
-                            </Stack>
                             <InputForm
                                 field="E-mail"
                                 placeholder="seuemail@exemplo.com"
@@ -104,6 +93,8 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                                     variant="outline"
                                     value={phone}
                                     type="tel"
+                                    height={12}
+                                    fontSize='lg'
                                     placeholder="(00)0 000-000"
                                     onChange={(e) => setPhone(e.target.value)}
                                 />
