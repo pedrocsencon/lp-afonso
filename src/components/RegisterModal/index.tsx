@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import InputForm from "./components/InputForm";
 import { RegisterModalProps } from "./types";
 import InputMask from "react-input-mask";
+import { useRouter } from "next/router";
 
 export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
     const [firstName, setFirstName] = useState("");
@@ -13,6 +14,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
     const { mutate: addUser, isLoading: loadingRegister } = useRegisterUser()
     const { mutate: addInList, isLoading: loadingList } = useAddUserInList()
     const toast = useToast();
+    const route = useRouter();
 
     function clearForm() {
         setFirstName("");
@@ -43,6 +45,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                     isClosable: true,
                 })
                 onClose();
+                route.push('/obrigado')
             },
             onError: (res: any) => {
                 toast({
@@ -64,7 +67,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                     <ModalHeader>Cadastrar-se</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        <Stack paddingX={8}>
+                        <Stack paddingX={[2, 4, 8]}>
                             <Stack direction='row' width='100%'>
                                 <InputForm
                                     field="Nome"

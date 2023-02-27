@@ -19,8 +19,6 @@ export default function Home() {
   const {isOpen, onOpen, onClose} = useDisclosure();
   const [isLargerThan1100] = useMediaQuery("(min-width: 1100px)");
 
-  
-
   return (
     <>
     <LPMetaPixel/>
@@ -41,7 +39,7 @@ export default function Home() {
             </Text>
             <Stack paddingY={2} width={['90%', '80%','60%' ,'50%']} justifyContent='center' borderRadius={8} borderWidth={2} borderColor='orange.500' direction='row' spacing={2} alignItems='center'>
               <FaCalendarMinus size={14} color='#ff8000'/>
-              <Text textColor='orange.500'>01 a 02 de março</Text>
+              <Text textColor='orange.500'>09 a 12 de março</Text>
               <Text textColor='orange.500'>|</Text>
               <FaClock size={14} color='#ff8000'/>
               <Text textColor='orange.500'>às 20h</Text>
@@ -68,16 +66,6 @@ export default function Home() {
          )}
       </Flex>
       {isLargerThan1100 && <Box width='100%' height={24} backgroundColor={'orange.500'}/>}
-      {/* {!isLargerThan1100 && ( 
-        <Flex zIndex={1000} alignItems='center' justifyContent='center' position='absolute' height={24} width='100%' backgroundColor='white' shadow={'lg'} bottom={0}>
-        <ButtonMotion onClick={onOpen} onHoverStart={startHover} onHoverEnd={endHover} id='anim-bg-gradient' initial={{backgroundPosition: '0%'}} animate={{backgroundPosition: ['0%', '150%', '0%'], scale: [1, 1.02, 1]}} transition={{ type: 'spring', repeat: hover ? 'once' : Infinity, duration: 1, repeatDelay: 2, repeatType: "reverse", ease: 'easeInOut' }} size='lg' colorScheme='orange' width='75%'>
-                <Stack direction='row'>
-                <FaUserPlus size={18}/>
-                <Text>Quero aprender</Text>
-                </Stack>
-              </ButtonMotion>
-        </Flex>
-      )}  */}
       <RegisterModal isOpen={isOpen} onClose={onClose}/>
     </>
   )
