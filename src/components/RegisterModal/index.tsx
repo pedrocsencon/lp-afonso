@@ -80,8 +80,6 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                             <Stack>
                                 <Text fontWeight='semibold' fontFamily="heading">Telefone</Text>
                                 <Input
-                                    as={InputMask}
-                                    mask="(99)9 9999-9999"
                                     width="100%"
                                     borderRadius="full"
                                     _placeholder={{ color: "orange.500", opacity: 0.5 }}
@@ -89,7 +87,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                                     borderColor="orange.500"
                                     variant="outline"
                                     value={phone}
-                                    type="tel"
+                                    type="number"
                                     height={12}
                                     fontSize='lg'
                                     placeholder="(00)0 000-000"
