@@ -33,8 +33,8 @@ export default function Home() {
             <FaCalendarMinus size={12} color='#ff8000' />
             <Text textColor='orange.500' fontSize='md'>4 dias de aulas ao vivo e gratuitas</Text>
           </Stack>
-          <Text fontSize='3xl' lineHeight={1.2} fontWeight='bold'>
-            Transforme desconhecidos em clientes e alcance a segurança de ter dinheiro entrando na conta todos os dias
+          <Text fontSize='2xl' lineHeight={1.2} fontWeight='bold'>
+          Destrave seu crescimento, transforme desconhecidos em clientes e alcance a segurança de ter dinheiro entrando na conta todos os dias
           </Text>
           <Stack paddingY={2} width={['90%', '80%', '60%', '60%']} justifyContent='center' borderRadius={8} direction='row' spacing={2} alignItems='center' backgroundColor={'orange.500'}>
             <FaCalendarMinus size={14} color='white' />
