@@ -5,6 +5,14 @@
     background-repeat: no-repeat;
 }
 
+#texture{
+  background-image: url('../assets/texture.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 #anim-bg-gradient {
     padding: 0.6em 1.2em;
     border-radius: 0.375em;
