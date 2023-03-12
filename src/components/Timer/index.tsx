@@ -4,7 +4,7 @@ import {Link} from 'react-scroll'
 import { useMemo } from "react";
 import { goTo } from "@/utils";
 
-export default function Timer(){
+export default function Timer({top}: {top?: boolean}){
     const time = new Date('March 19, 2023 23:59:00');
     const { seconds, minutes, hours, days } = useTimer({ expiryTimestamp: time });
    
@@ -20,7 +20,55 @@ export default function Timer(){
             <Text textAlign='center' textColor={'white'} fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
             ÚLTIMA CHANCE!
             </Text>
-                <Stack spacing={4} textColor='white'direction={'row'}>
+            {top ? 
+            
+            <Stack spacing={4} textColor='white'direction={'row'}>
+            <Stack textAlign='center' spacing={0}>
+                <Text fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
+                    {formatTime(days)}
+                </Text>
+                <Text fontSize={['xx-small', 'sm']} fontWeight='bold'>
+                    DIAS
+                </Text>
+            </Stack>
+            <Stack textAlign='center' spacing={0}>
+                <Text fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
+                    {formatTime(hours)}
+                </Text>
+                <Text fontSize={['xx-small', 'sm']} fontWeight='bold'>
+                    HORAS
+                </Text>
+            </Stack>
+            <Stack textAlign='center' spacing={0}>
+                <Text fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
+                    {formatTime(minutes)}
+                </Text>
+                <Text fontSize={['xx-small', 'sm']} fontWeight='bold'>
+                    MINUTOS
+                </Text>
+            </Stack>
+            <Stack textAlign='center' spacing={0}>
+                <Text fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
+                    {formatTime(seconds)}
+                </Text>
+                <Text fontSize={['xx-small', 'sm']} fontWeight='bold'>
+                    SEGUNDOS
+                </Text>
+            </Stack>
+            <Button onClick={()=>{
+            goTo('https://pay.kiwify.com.br/6LeuLKG')
+        }} colorScheme={'whatsapp'} height={12} size={'xs'} flexDir='column'>
+            <Text fontWeight='bold'>GARANTIR</Text>
+            <Text fontWeight='bold'>
+            AGORA!
+            </Text>
+        </Button>
+        </Stack>
+         
+        :
+        <>
+        
+        <Stack spacing={4} textColor='white'direction={'row'}>
                     <Stack textAlign='center' spacing={0}>
                         <Text fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
                             {formatTime(days)}
@@ -54,11 +102,15 @@ export default function Timer(){
                         </Text>
                     </Stack>
                 </Stack>
-            <Button onClick={()=>{
-                goTo('https://pay.kiwify.com.br/6LeuLKG')
-            }} colorScheme={'whatsapp'} size={'lg'} flexDir='column'>
-                GARANTIR AGORA!
-            </Button>
+                 <Button onClick={()=>{
+                    goTo('https://pay.kiwify.com.br/6LeuLKG')
+                }} colorScheme={'whatsapp'} size={'lg'} flexDir='column'>
+                    GARANTIR AGORA!
+                </Button>
+        </>
+        }
+                
+           
         </Stack>
     )
 }

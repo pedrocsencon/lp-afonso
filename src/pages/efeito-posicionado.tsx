@@ -45,6 +45,7 @@ export default function EfeitoPosicionado() {
       <Head>
         <title>Efeito Posicionado - Afonso Molina</title>
       </Head>
+      <Timer top/>
         <Stack spacing={0}  width={'100%'} alignItems='center'>
             <Flex paddingBottom={12} height={['fit-content', 'fit-content', 'fit-content', '90vh']} id='background' position={'relative'} direction={['column', 'column', 'column', 'row']} width={['100%', '95%', '90%', '90%']} alignItems={'center'} justify={['center', 'center', 'initial']}>
                 <Box position={['relative', 'relative', 'relative', 'absolute']} right={['initial', 'initial', 'initial', '5%']} width={['100%', '80%', '70%', '60%']} zIndex={-2}>
