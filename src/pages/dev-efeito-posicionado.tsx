@@ -30,6 +30,7 @@ import options from '../assets/options.png'
 import { motion } from "framer-motion";
 import { useCallback, useState } from "react";
 import { goTo } from "@/utils";
+import Head from "next/head";
 
 export default function EfeitoPosicionado() {
     const StackMotion = motion(Stack)
@@ -41,6 +42,9 @@ export default function EfeitoPosicionado() {
     return (
       
       <>
+      <Head>
+        <title>Efeito Posicionado - Afonso Molina</title>
+      </Head>
         <Timer />
         <Stack spacing={4} width={'100%'} alignItems='center'>
             <Flex paddingBottom={12} height={['fit-content', 'fit-content', 'fit-content', '90vh']} id='background' position={'relative'} direction={['column', 'column', 'column', 'row']} width={['100%', '95%', '90%', '90%']} alignItems={'center'} justify={['center', 'center', 'initial']}>

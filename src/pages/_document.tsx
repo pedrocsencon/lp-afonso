@@ -7,8 +7,7 @@ export default function Document() {
         <Head>
         <meta
           name="description"
-          content="Transforme desconhecidos em clientes e alcance a segurança de ter dinheiro entrando na conta todos os dias"
-        />
+          content="7 semanas para transformar o seu negócio: Domine o Instagram, conquiste milhares de seguidores e venda muito todo dia"/>
         <meta name="author" content="Afonso Molina" />
         <meta name="keywords" content="Next.JS, Typescript" />
         <meta httpEquiv="cache-control" content="public" />
