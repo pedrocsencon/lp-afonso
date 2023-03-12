@@ -175,7 +175,7 @@ export default function EfeitoPosicionado() {
                         <Stack width='100%' alignItems='center'>
                         <Divider borderColor={'white'} orientation='vertical' height={12} borderLeftWidth={2}/>
                         </Stack>
-                        <WeekInfoBullet url={boxUser} text='Nós vamos montar um perfil mais atraente, desenhado para o seu mercado, que deixa claro para quem chega qual é a essência do seu negócio, e também vou compartilhar com você as bases da estratégia que me permitiu ganhar 180 mil seguidores em apenas 7 meses..' week="1" />
+                        <WeekInfoBullet url={boxUser} text='Nós vamos montar um perfil mais atraente, desenhado para o seu mercado, que deixa claro para quem chega qual é a essência do seu negócio, e também vou compartilhar com você as bases da estratégia que me permitiu ganhar 180 mil seguidores em apenas 7 meses...' week="1" />
                         <Stack width='100%' alignItems='center'>
                         <Divider borderColor={'white'} orientation='vertical' height={12} borderLeftWidth={2}/>
                         </Stack>
@@ -340,7 +340,7 @@ export default function EfeitoPosicionado() {
                         HOJE, ESSE É O NOSSO VALOR DO PROGRAMA:
                     </Text>
                     <Text fontWeight={'extrabold'} fontSize={['4xl', '4xl' ,'4xl' ,'5xl']} >
-                        R$1997,00
+                        R$1.997,00
                     </Text>
                 </Stack>
                 <Text fontSize={['md', 'md' ,'lg', '2xl']}>
