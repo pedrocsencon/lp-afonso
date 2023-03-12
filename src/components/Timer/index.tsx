@@ -8,14 +8,14 @@ export default function Timer(){
 
     return (
         <Link style={{width: '100%'}} to="cta-efeito" smooth offset={-24}>
-        <Stack bgColor={'orange.500'} spacing={[4, 6, 8, 12]} direction='row' width='100%' height={20} alignItems='center' justifyContent='center'>
-            <Text textAlign='center' width={[16, 'fit-content', 'fit-content', 'fit-content']} textColor={'white'} fontWeight='extrabold' fontSize={['xs', 'md', '2xl']}>
+        <Stack bgColor={'orange.500'} padding={4} spacing={[4, 6, 8, 12]} direction={['column', 'row' ,'row' ,'row']} width='100%' alignItems='center' justifyContent='center'>
+            <Text textAlign='center' textColor={'white'} fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
             ÚLTIMA CHANCE!
             </Text>
             {seconds && minutes && hours && days && (
                 <Stack textColor='white'direction={'row'}>
                     <Stack textAlign='center' spacing={0}>
-                        <Text fontWeight='extrabold' fontSize={['xx-small', 'md', '2xl']}>
+                        <Text fontWeight='extrabold' fontSize={['lg', 'md', '2xl']}>
                             {days}
                         </Text>
                         <Text fontSize={['xx-small', 'sm']} fontWeight='bold'>
@@ -23,7 +23,7 @@ export default function Timer(){
                         </Text>
                     </Stack>
                     <Stack textAlign='center' spacing={0}>
-                        <Text fontWeight='extrabold' fontSize={['xx-small', 'md', '2xl']}>
+                        <Text fontWeight='extrabold' fontSize={['lg', 'md', '2xl']}>
                             {hours}
                         </Text>
                         <Text fontSize={['xx-small', 'sm']} fontWeight='bold'>
@@ -31,7 +31,7 @@ export default function Timer(){
                         </Text>
                     </Stack>
                     <Stack textAlign='center' spacing={0}>
-                        <Text fontWeight='extrabold' fontSize={['xx-small', 'md', '2xl']}>
+                        <Text fontWeight='extrabold' fontSize={['lg', 'md', '2xl']}>
                             {minutes}
                         </Text>
                         <Text fontSize={['xx-small', 'sm']} fontWeight='bold'>
@@ -39,7 +39,7 @@ export default function Timer(){
                         </Text>
                     </Stack>
                     <Stack textAlign='center' spacing={0}>
-                        <Text fontWeight='extrabold' fontSize={['xx-small', 'md', '2xl']}>
+                        <Text fontWeight='extrabold' fontSize={['lg', 'md', '2xl']}>
                             {seconds}
                         </Text>
                         <Text fontSize={['xx-small', 'sm']} fontWeight='bold'>
@@ -48,13 +48,8 @@ export default function Timer(){
                     </Stack>
                 </Stack>
             )}
-            <Button id='timer-button' size={['xs', 'sm', 'md', 'lg']} flexDir='column'>
-                <Text fontWeight='bold' fontSize={['xx-small', 'xs' ,'sm']}>
-                GARANTIR
-                </Text>
-                <Text display={['none', 'initial', 'initial', 'initial',]} fontWeight='bold' fontSize={['xs', 'xs', 'sm']}>
-                    AGORA!
-                </Text>
+            <Button id='timer-button' size={'lg'} flexDir='column'>
+                GARANTIR AGORA!
             </Button>
         </Stack></Link>
     )

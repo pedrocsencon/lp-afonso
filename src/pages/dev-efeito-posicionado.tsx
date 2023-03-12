@@ -45,8 +45,7 @@ export default function EfeitoPosicionado() {
       <Head>
         <title>Efeito Posicionado - Afonso Molina</title>
       </Head>
-        <Timer />
-        <Stack spacing={4} width={'100%'} alignItems='center'>
+        <Stack spacing={0}  width={'100%'} alignItems='center'>
             <Flex paddingBottom={12} height={['fit-content', 'fit-content', 'fit-content', '90vh']} id='background' position={'relative'} direction={['column', 'column', 'column', 'row']} width={['100%', '95%', '90%', '90%']} alignItems={'center'} justify={['center', 'center', 'initial']}>
                 <Box position={['relative', 'relative', 'relative', 'absolute']} right={['initial', 'initial', 'initial', '5%']} width={['100%', '80%', '70%', '60%']} zIndex={-2}>
                     <Image alt="afonsod1" src={afonsod1} />
@@ -69,7 +68,7 @@ export default function EfeitoPosicionado() {
                             e venda muito todo dia
                         </Text>
                     </Stack>
-                        <Text fontSize={['sm', 'sm', 'lg']} width={['90%', '95%', '95%', '70%']}>
+                        <Text fontSize={['md', 'sm', 'lg']} width={['90%', '95%', '95%', '70%']}>
                         <Text as='span' textDecor='underline'>Viralização, explosão de seguidores, visibilidade, autoridade, reconhecimento e vendas;</Text> Essa mentoria de 7 semanas vai te ensinar o passo a passo para que você se posicione e alcance o sucesso no digital
                         </Text>
                     <StackMotion display={['none', 'none', 'none', 'flex']} animate={{ y: [0, -2, 2, 0] }} transition={{ type: "spring", stiffness: 100, delay: 0.2, duration: 1, repeat: Infinity }} direction='row' alignItems='center'>
@@ -78,8 +77,8 @@ export default function EfeitoPosicionado() {
                     </StackMotion>
                 </Stack>
             </Flex>
-            <Stack spacing={8} marginTop={[0, 0, 0, 24]} textAlign={'center'} width={'100%'} alignItems='center' padding={6} backgroundColor='#f3f3f3'>
-                <Text fontSize={['xl', 'xl', '2xl', '4xl']} fontWeight='bold'>
+            <Stack spacing={6} marginTop={[0, 0, 0, 24]} textAlign={'center'} width={'100%'} alignItems='center' padding={2} backgroundColor='#f3f3f3'>
+                <Text paddingTop={4} fontSize={['xl', 'xl', '2xl', '4xl']} fontWeight='bold'>
                     Tudo pode mudar em 7 semanas
                 </Text>
                 <Stack borderRadius={24} width={['100%', '100%', '100%', '60%']} marginTop={4} spacing={4} backgroundColor={'white'} paddingX={[4, 4, 8, 24]} paddingY={[4, 4, 4, 8]} alignItems='center' textAlign='center'>
@@ -89,72 +88,72 @@ export default function EfeitoPosicionado() {
                     <Text fontSize='xl' fontWeight='bold'>
                         Eu ouço as mesmas coisas desde o começo…
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Desde o primeiro dia no Instagram, as pessoas me trazem as mesmas dificuldades
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Depois de todo o suor que você coloca para criar um post, parece que o Instagram está te boicotando. Trabalhando contra você.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Não é raro que se gaste um tempo absurdo em troca de silêncio. Poucos seguidores novos, meia dúzia de comentários, ninguém assistindo seus vídeos.
                     </Text>
-                    <Box width={['100%', '100%', '80%', '60%']}>
+                    <Box paddingY={4} width={['100%', '100%', '80%', '60%']}>
                         <Image alt="popup1" src={popup1} />
                     </Box>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Eu sei muito bem como é isso.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
-                        <Text textDecor='underline'>Essa é a parte mais dura:</Text> se esforçar tanto e não ter um retorno financeiro, não poder dirigir um bom carro, ir nos seus restaurantes favoritos, sem preocupação com nada.
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
+                        <Text textDecor='underline'>Essa é a parte mais dura:</Text> se esforçar tanto e não ter um retorno financeiro, <strong>não poder dirigir um bom carro, ir nos seus restaurantes favoritos</strong>, sem preocupação com nada.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Ter aquela segurança do <strong>dinheiro entrando na sua conta todos os dias</strong>, faça chuva ou faça sol.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Se você chegou aqui, é porque você sabe que tem potencial. Você quer vender algum produto ou serviço, quer ser reconhecido, quer ter autoridade no seu mercado.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Mas Meu Deus, como essas coisas parecem difíceis no começo, não é mesmo?
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Eu já senti tudo isso na pele e eu suei demais para dar a volta por cima.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Eu sei o que é ser anônimo, desconhecido, não ter seguidores, e muito menos clientes.
                     </Text>
-                    <Box width={['100%', '100%', '80%', '60%']}>
+                    <Box paddingY={4} width={['100%', '100%', '80%', '60%']}>
                         <Image alt="popup1" src={popup2} />
                     </Box>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Eu sei que o sucesso no Instagram é possível, que a viralização está ao alcance de todos, que pessoas comuns, feito eu e você, <strong>podem conquistar seguidores e vender demais por aqui</strong>.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         E foi por isso que eu decidi criar a mentoria Efeito Posicionado.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Juntos, nós vamos transformar completamente seu negócio. Vamos construir uma conta que atrai muitos seguidores, crescendo rápido.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
                         Um perfil viciante que as pessoas querem acompanhar o dia inteiro. E mais importante: uma conta que converte seguidores em clientes <strong>todos os dias</strong>.
                     </Text>
-                    <Text fontSize={['sm', 'sm', 'sm', 'md']} width={'100%'}>
-                        Em 7 semanas de encontros ao vivo, eu vou te conduzir até o <strong>faturamento que você merece</strong>
+                    <Text fontSize={['md', 'md', 'md', 'md']} width={'100%'}>
+                    <strong> Em 7 semanas de encontros ao vivo, eu vou te conduzir até o faturamento que você merece</strong>
                     </Text>
 
-                    <Text fontWeight={'bold'} fontSize={['md', 'md', 'md', 'lg']} width={'100%'}>
+                    <Text  fontSize={['md', 'md', 'md', 'lg']} width={'100%'}>
                         É isso mesmo. Precisamos de menos de 2 meses. A cada semana, você dará um novo salto.
                     </Text>
-                    <Text fontWeight={'bold'} fontSize={['md', 'md', 'md', 'lg']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'lg']} width={'100%'}>
                         A cada semana você vai receber mais seguidores que acompanham de perto o seu conteúdo e compram o que você vende.
                     </Text>
-                    <Text fontWeight={'bold'} fontSize={['md', 'md', 'md', 'lg']} width={'100%'}>
+                    <Text fontSize={['md', 'md', 'md', 'lg']} width={'100%'}>
                         A cada semana você vai estar mais preparado, mais profissional e confiante.
                     </Text>
                 </Stack>
             </Stack>
-            <Stack id='texture' width={'100%'} bgColor={'white'} alignItems='center' padding={[4, 4, 4, 12]} backgroundColor='orange.400'>
+            <Stack id='texture' width={'100%'} bgColor={'white'} alignItems='center' padding={[4, 4, 4, 12]} backgroundColor='orange.400' paddingBottom={12}>
                 <Stack width={['100%', '90%', '70%', '50%']}>
-                    <Box padding={4} marginTop={4} borderRadius={12} borderColor={'white'} borderWidth={1}>
+                    <Box padding={4} marginTop={8} borderRadius={12} borderColor={'white'} borderWidth={1}>
                         <Text fontWeight='bold' fontSize='xl' textColor='white' textAlign='center'>
                             O que vai acontecer nessas
                         </Text>
@@ -162,7 +161,7 @@ export default function EfeitoPosicionado() {
                             7 semanas
                         </Text>
                     </Box>
-                    <Stack spacing={8} marginTop={8}>
+                    <Stack paddingTop={6} spacing={8}>
                         <Stack paddingBottom={4} position='relative' alignItems='center'>
                             <Flex zIndex={5} alignItems={'flex-end'} width={'90%'} justify='space-between'>
                                 <Flex width={12} alignItems='center' justifyContent='center' height={12}>
@@ -177,7 +176,7 @@ export default function EfeitoPosicionado() {
                                     Semana 0:
                                 </Text>
                                 <Divider borderColor='orange.500' width={12} borderWidth={2} />
-                                <Text marginTop={2} fontSize={'sm'} color='black'>O módulo <Text as='span' textColor='orange.500'>O marketing por trás do marketing</Text> foi pensado para solidificar o seu conhecimento, te conduzir, passo a passo, com uma didática acessível, até uma forma profissional de pensar sobre vendas na internet.</Text>
+                                <Text marginTop={2} fontSize={'sm'} color='black'>O módulo <Text as='span' fontWeight='bold' textColor='orange.500'>O marketing por trás do marketing</Text> foi pensado para solidificar o seu conhecimento, te conduzir, passo a passo, com uma didática acessível, até uma forma profissional de pensar sobre vendas na internet.</Text>
                             </Box>
                             <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'95%'} bottom={0} bgColor={'white'} position='absolute' />
                         </Stack>
@@ -209,77 +208,79 @@ export default function EfeitoPosicionado() {
                     </Stack>
                 </Stack>
             </Stack>
-            <Stack width={['100%', '80%', '70%', '50%']} spacing={[6, 6, 8, 12]} padding={6} alignItems='center' textAlign='center'>
-                <Stack >
+            <Stack width={['100%', '80%', '70%', '50%']} spacing={[6, 6, 8, 12]} padding={2} alignItems='center' textAlign='center'>
+                <Stack paddingTop={4} width='100%'>
                     <Text fontWeight='bold' fontSize='2xl' textAlign='center'>
                         E não é só isso...
                     </Text>
-                    <Text fontSize={'lg'}>
+                    <Text fontSize={['sm', 'md', 'lg', 'lg']}>
                         Sim, essas 7 semanas vão ser intensas e transformadoras, mas eu vou te entregar muito mais.
                     </Text>
-                    <Text fontSize={'lg'}>
+                    <Text fontSize={['sm', 'md', 'lg', 'lg']}>
                         Você também vai receber de bônus o curso completo
                     </Text>
                 </Stack>
                 <Stack  direction={['column', 'column', 'column', 'row']} width={'100%'} alignItems='center' spacing={[4, 4, 4, 8]}>
-                    <Flex alignContent='center' justifyContent='center' width={['80%', '80%', '80%', '100%']}>
+                    <Flex alignContent='center' justifyContent='center' width={['60%', '80%', '80%', '100%']}>
                         <Image src={anuncios} alt='anuncios' />
                     </Flex>
-                    <Stack textAlign={['center', 'center', 'center', 'initial']}>
-                        <Text fontWeight='bold' fontSize='2xl'>
+                    <Stack alignItems='center' textAlign={['center', 'center', 'center', 'initial']}>
+                        <Text fontWeight='bold' fontSize={['lg', 'xl' ,'2xl' ,'2xl']}>
                             Dominando os anúncios do Instagram
                         </Text>
-                        <Text fontSize={'lg'}>
+                        <Text width={'90%'} fontSize={['md', 'md' ,'lg' ,'lg']} textAlign='center'> 
                             Um aprofundamento completo no universo do tráfego pago e como fazer cada centavo contar na aquisição de novos clientes.
                         </Text>
                     </Stack>
                 </Stack>
-                <Box width={['100%', '100%', '100%', '50%']}>
+               <Stack paddingY={2} width='100%' alignItems='center' spacing={4}>
+               <Box width={['90%', '100%', '100%', '50%']}>
                     <Image alt="popup1" src={popup4} />
                 </Box>
-                <Box width={['100%', '100%', '100%', '50%']}>
+                <Box width={['90%', '100%', '100%', '50%']}>
                     <Image alt="popup1" src={popup5} />
                 </Box>
+               </Stack>
                 <Stack direction={['column', 'column', 'column', 'row-reverse']} width={'100%'} alignItems='center' spacing={[4, 4, 4, 8]}>
                     <Flex alignContent='center' justifyContent='center' width={['80%', '80%', '80%', '100%']}>
                         <Image alt="popup1" src={gpt} />
                     </Flex>
-                    <Stack textAlign={['center', 'center', 'center', 'initial']}>
-                        <Text fontWeight='bold' fontSize='2xl' >
+                    <Stack alignItems='center' textAlign={['center', 'center', 'center', 'initial']}>
+                        <Text fontWeight='bold' fontSize={['lg', 'xl' ,'2xl' ,'2xl']}>
                             Chat GPT para Instagram: Produzindo Conteúdo de Forma Rápida, Eficiente E Lucrativa
                         </Text>
-                        <Text fontSize={'lg'}>
+                        <Text width={'90%'} fontSize={['md', 'md' ,'lg' ,'lg']} textAlign='center'> 
                             Onde vou te mostrar a fundo o poder dessa ferramenta, como ela vai acelerar sua produção de conteúdo, elevar o nível do seu engajamento e consequentemente explodir suas vendas.
                         </Text>
                     </Stack>
                 </Stack>
-                <Text fontWeight='bold' fontSize='xl' textAlign='center'>
+                <Text paddingTop={6} fontWeight='bold' fontSize={['lg', 'xl' ,'2xl' ,'2xl']} textAlign='center'>
                     …E se, depois disso tudo, você ainda me dissesse que está inseguro, porque não sabe falar com a câmera, não se sente bem verbalizando suas ideias, não se preocupe:
                 </Text>
-                <Text fontWeight='bold' fontSize='xl' textAlign='center'>
+                <Text paddingY={4} fontWeight='bold' fontSize={['lg', 'xl' ,'2xl' ,'2xl']} textAlign='center'>
                     Eu incluí também a Masterclass
                 </Text>
                 <Stack direction={['column', 'column', 'column', 'row']} width={'100%'} alignItems='center' spacing={[4, 4, 4, 8]}>
                     <Flex alignContent='center' justifyContent='center' width={['80%', '80%', '80%', '75%']}>
                         <Image alt="popup1" src={comunicacao} />
                     </Flex>
-                    <Stack textAlign={['center', 'center', 'center', 'initial']}>
-                        <Text fontWeight='bold' fontSize='2xl'>
+                    <Stack alignItems='center' textAlign={['center', 'center', 'center', 'initial']}>
+                        <Text fontWeight='bold' fontSize={['lg', 'xl' ,'2xl' ,'2xl']}>
                             Destravando Sua Comunicação No Instagram
                         </Text>
-                        <Text fontSize={'lg'}>
+                        <Text width={'90%'} fontSize={['md', 'md' ,'lg' ,'lg']} textAlign='center'> 
                             Tudo que você precisa saber para falar com confiança na criação do seu conteúdo.
                         </Text>
                     </Stack>
                 </Stack>
-                <Text fontWeight='bold' fontSize='2xl' textAlign='center'>
+                <Text paddingY={6} fontWeight='bold' fontSize='2xl' textAlign='center'>
                     Esse é o momento da decisão.
                 </Text>
                 <Stack alignItems='center' spacing={6} padding={[4, 4, 8, 12]} borderRadius={12} bgColor={'white'} shadow='2xl'>
                     <Text>
                         As próximas semanas vão passar de qualquer forma; mas você está a uma escolha de mudar o seu negócio completamente.
                     </Text>
-                    <Box width='70%'>
+                    <Box width='90%'>
                         <Image src={popup6} alt='popup' />
                     </Box>
                     <Text>
@@ -299,7 +300,7 @@ export default function EfeitoPosicionado() {
                     </Text>
                 </Stack>
             </Stack>
-            <Stack spacing={8} width={['100%', '100%', '70%', '40%']} alignItems='center'>
+            <Stack paddingTop={8} spacing={8} width={['100%', '100%', '70%', '40%']} alignItems='center'>
                 <Text paddingY={[4, 4, 6, 8]} fontWeight='bold' fontSize={['2xl', '2xl', '2xl', '3xl']} textAlign='center'>
                     No <Text as='span' textDecor={'underline'} textUnderlineOffset={2} textDecorationColor='orange.500'>Efeito Posicionado,</Text> <Text> é isso que você vai levar:</Text>
                 </Text>
@@ -308,14 +309,14 @@ export default function EfeitoPosicionado() {
                 <PriceCourse text="Curso Chat GPT para Instagram: Produzindo Conteúdo de Forma Rápida, Eficiente E Lucrativa" price="R$597,00" />
                 <PriceCourse text="Masterclass Destravando Sua Comunicação No Instagram" price="R$497,00" />
                 <PriceCourse text="Replay das lives Desafio Posicionado Digital" price="R$297,00" />
-                <Text>
+                <Text paddingBottom={8}>
                     +OUTROS BÔNUS ESPECIAIS
                 </Text>
             </Stack>
             <Flex width={'100%'} marginY={12}>
                 <Timer />
             </Flex>
-            <Stack width={'100%'} paddingX={8} alignItems='center' textAlign={'center'} spacing={8}>
+            <Stack width={'100%'} paddingX={4} paddingTop={8} alignItems='center' textAlign={'center'} spacing={8}>
                 <Stack textAlign={'center'} alignItems='center' spacing={0}>
                     <Text fontSize={'sm'}>
                         TOTAL:
@@ -325,7 +326,7 @@ export default function EfeitoPosicionado() {
                     </Text>
                 </Stack>
                 <Stack textAlign={'center'} spacing={0}>
-                    <Text fontSize={['sm', 'sm' ,'md' ,'lg']}>
+                    <Text fontSize={['sm', 'md' ,'md' ,'lg']}>
                         HOJE, ESSE É O NOSSO VALOR DO PROGRAMA:
                     </Text>
                     <Text fontWeight={'extrabold'} fontSize={'3xl'} textDecor={'line-through'}>
@@ -333,7 +334,7 @@ export default function EfeitoPosicionado() {
                     </Text>
                 </Stack>
                 <Text fontSize={['md', 'md' ,'md' ,'lg']}>
-                    Mas essa é a primeira turma online do <Text fontWeight={'extrabold'} fontSize={['sm', 'sm' ,'md' ,'lg']} textDecor={'underline'} textUnderlineOffset={2} textDecorationColor='orange.500'>Efeito Posicionado,</Text><strong>então eu decidi ir além</strong>.
+                    Mas essa é a primeira turma online do <Text as='span' fontWeight={'extrabold'}textDecor={'underline'} textUnderlineOffset={2} textDecorationColor='orange.500'>Efeito Posicionado,</Text> <strong>então eu decidi ir além</strong>.
                 </Text>
                 <Text fontSize={['md', 'md' ,'md' ,'lg']}>
                     Apenas até <strong>19/03</strong> você pode entrar nessa jornada por apenas:
@@ -349,14 +350,14 @@ export default function EfeitoPosicionado() {
                         (12X DE R$99,40)
                     </Text>
                 </Stack>
-                <ButtonMotion onClick={()=>{goTo('https://pay.kiwify.com.br/6LeuLKG')}} onHoverStart={startHover} onHoverEnd={endHover} id='anim-bg-gradient' initial={{ backgroundPosition: '0%' }} animate={{ backgroundPosition: ['0%', '150%', '0%'], scale: [1, 1.02, 1] }} transition={{ type: 'spring', repeat: hover ? 'once' : Infinity, duration: 1, repeatDelay: 2, repeatType: "reverse", ease: 'easeInOut' }} size='lg' colorScheme='orange' height={16} width={['100%', '95%' ,'75%' ,'30%']}>
+            <Button onClick={()=>{goTo('https://pay.kiwify.com.br/6LeuLKG')}} id='anim-bg-gradient' size='lg' colorScheme='orange' height={16} width={['100%', '95%' ,'75%' ,'30%']}>
               <Stack direction='row'>
                 <Text>QUERO VENDER MUITO</Text>
               </Stack>
-            </ButtonMotion>
+            </Button>
             </Stack>
             <Stack padding={[8, 8 ,8 ,0]} alignItems='center'>
-                <Box width={['100%', '100%', '100%', '20%']}>
+                <Box paddingBottom={8} width={['70%', '100%', '100%', '20%']}>
                     <Image alt="selo" src={selo} />
                 </Box>
                 <Flex direction={['column', 'column', 'column', 'row']} width={['100%', '100%' ,'100%' ,'80%']} justify='center' alignItems='center'>
