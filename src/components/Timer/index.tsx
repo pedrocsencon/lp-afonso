@@ -7,11 +7,11 @@ export default function Timer(){
 
     return (
         <Stack bgColor={'orange.500'} spacing={1} direction='row' width='100%' height={16} alignItems='center' justifyContent='center'>
-            <Text textColor={'white'} fontSize={'xs'}>
+            <Text textColor={'white'} fontSize={['xs', 'md', 'lg']}>
             O evento termina em:
             </Text>
             {seconds && minutes && hours && days && (
-            <Text textColor={'white'} fontWeight='extrabold' fontSize='xs'>
+            <Text textColor={'white'} fontWeight='extrabold' fontSize={['xs', 'md', 'lg']}>
                 {days} dias, {hours} horas {minutes} min {seconds} seg
             </Text>
             )}
