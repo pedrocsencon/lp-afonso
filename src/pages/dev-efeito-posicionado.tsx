@@ -1,4 +1,4 @@
-import {  Box, Button, Flex, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Divider, Flex, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 import afonsod1 from '../assets/afonso-d1.png'
@@ -7,7 +7,7 @@ import headerBg from '../assets/top-bg.png'
 import messenger from '../assets/messenger-icon.png'
 import popup1 from '../assets/popup1.png'
 import popup2 from '../assets/popup2.png'
-import popup3 from '../assets/popup3.png'
+import popup6 from '../assets/popup6.png'
 import popup4 from '../assets/popup4.png'
 import popup5 from '../assets/popup5.png'
 import brain from '../assets/brain.png'
@@ -25,10 +25,13 @@ import afonsoCelular from '../assets/afonso-celular.png'
 import WeekInfoBullet from "@/components/WeekInfoBullet";
 import PriceCourse from "@/components/PriceCourse";
 import FAQ from "@/components/FAQ";
+import Timer from "@/components/Timer";
+import options from '../assets/options.png'
 
 export default function EfeitoPosicionado() {
     return (
         <Box width={'100%'} alignItems='center'>
+            <Timer />
             <Flex paddingBottom={12} id='background' direction='column' width='100%' alignItems={'center'} justify='center'>
                 <Box width='100%'>
                     <Image alt="afonsod1" src={afonsod1} />
@@ -52,7 +55,10 @@ export default function EfeitoPosicionado() {
                         </Text>
                     </Stack>
                     <Text fontSize={'sm'} width={'95%'}>
-                        Viralização, explosão de seguidores, visibilidade, autoridade, reconhecimento e vendas; Essa mentoria de 7 semanas vai te ensinar o passo a passo para que você se posicione e alcance o sucesso no digital
+                        <strong>Viralização, explosão de seguidores, visibilidade, autoridade, reconhecimento e vendas</strong>
+                    </Text>
+                    <Text fontSize={'sm'} width={'95%'}>
+                        Essa mentoria de 7 semanas vai te ensinar o passo a passo para que você se posicione e alcance o sucesso no digital
                     </Text>
                 </Stack>
             </Flex>
@@ -86,10 +92,10 @@ export default function EfeitoPosicionado() {
                         Eu sei muito bem como é isso.
                     </Text>
                     <Text fontSize={'sm'} width={'100%'}>
-                        Essa é a parte mais dura: se esforçar tanto e não ter um retorno financeiro, não poder dirigir um bom carro, ir nos seus restaurantes favoritos, sem preocupação com nada.
+                        <Text textDecor='underline'>Essa é a parte mais dura:</Text> se esforçar tanto e não ter um retorno financeiro, não poder dirigir um bom carro, ir nos seus restaurantes favoritos, sem preocupação com nada.
                     </Text>
                     <Text fontSize={'sm'} width={'100%'}>
-                        Ter aquela segurança do dinheiro entrando na sua conta todos os dias, faça chuva ou faça sol.
+                        Ter aquela segurança do <strong>dinheiro entrando na sua conta todos os dias</strong>, faça chuva ou faça sol.
                     </Text>
                     <Text fontSize={'sm'} width={'100%'}>
                         Se você chegou aqui, é porque você sabe que tem potencial. Você quer vender algum produto ou serviço, quer ser reconhecido, quer ter autoridade no seu mercado.
@@ -113,11 +119,15 @@ export default function EfeitoPosicionado() {
                         E foi por isso que eu decidi criar a mentoria Efeito Posicionado.
                     </Text>
                     <Text fontSize={'sm'} width={'100%'}>
-                        Juntos, nós vamos transformar completamente seu negócio. Vamos construir uma conta que atrai muitos seguidores, crescendo rápido. Um perfil viciante que as pessoas querem acompanhar o dia inteiro. E mais importante: uma conta que converte seguidores em clientes <strong>todos os dias</strong>.
+                        Juntos, nós vamos transformar completamente seu negócio. Vamos construir uma conta que atrai muitos seguidores, crescendo rápido.
                     </Text>
-                    <Box>
-                        <Image alt="popup1" src={popup3} />
-                    </Box>
+                    <Text fontSize={'sm'} width={'100%'}>
+                        Um perfil viciante que as pessoas querem acompanhar o dia inteiro. E mais importante: uma conta que converte seguidores em clientes <strong>todos os dias</strong>.
+                    </Text>
+                    <Text fontSize={'sm'} width={'100%'}>
+                        Em 7 semanas de encontros ao vivo, eu vou te conduzir até o <strong>faturamento que você merece</strong>
+                    </Text>
+
                     <Text fontWeight={'bold'} fontSize={'md'} width={'100%'}>
                         É isso mesmo. Precisamos de menos de 2 meses. A cada semana, você dará um novo salto.
                     </Text>
@@ -139,27 +149,65 @@ export default function EfeitoPosicionado() {
                     </Text>
                 </Box>
                 <Stack spacing={8} marginTop={8}>
-                    <WeekInfoBullet url={brain} text='O módulo O marketing por trás do marketing foi pensado para solidificar o seu conhecimento, te conduzir, passo a passo, com uma didática acessível, até uma forma profissional de pensar sobre vendas na internet.' week="0" />
+                    <Stack paddingBottom={4} position='relative' alignItems='center'>
+                        <Flex zIndex={5} alignItems={'flex-end'} width={'90%'} justify='space-between'>
+                            <Flex width={12} alignItems='center' justifyContent='center' height={12}>
+                                <Image width={60} height={60} alt="img" src={brain} />
+                            </Flex>
+                            <Box width={6} height={6}>
+                                <Image alt="options" src={options} />
+                            </Box>
+                        </Flex>
+                        <Box marginBottom={4} zIndex={5} width={'90%'}>
+                            <Text fontSize={'xs'} fontWeight='bold'>
+                                Semana 0:
+                            </Text>
+                            <Divider  borderColor='orange.500' width={12} borderWidth={2} />
+                            <Text marginTop={2} fontSize={'sm'} color='black'>O módulo <Text as='span' textColor='orange.500'>O marketing por trás do marketing</Text> foi pensado para solidificar o seu conhecimento, te conduzir, passo a passo, com uma didática acessível, até uma forma profissional de pensar sobre vendas na internet.</Text>
+                        </Box>
+                        <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'95%'} bottom={0} bgColor={'white'} position='absolute' />
+                    </Stack>
                     <WeekInfoBullet url={boxUser} text='Nós vamos montar um perfil mais atraente, desenhado para o seu mercado, que deixa claro para quem chega qual é a essência do seu negócio, e também vou compartilhar com você as bases da estratégia que me permitiu ganhar 180 mil seguidores em apenas 7 meses..' week="1" />
                     <WeekInfoBullet url={instagram} text='Aqui nós vamos mergulhar a fundo na produção de conteúdo para todos os canais do Instagram. Esqueça os bloqueios criativos e as inseguranças, você vai dominar todos os canais de comunicação do Instagram.' week="2" />
-                    <WeekInfoBullet url={graph} text='Nada de meia dúzia de seguidores novos por semana, nessa semana você vai dominar as melhores estratégias de crescimento acelerado.' week="3" />
+                    <Stack paddingBottom={4} position='relative' alignItems='center'>
+                        <Flex zIndex={5} alignItems={'flex-end'} width={'90%'} justify='space-between'>
+                            <Flex width={12} alignItems='center' justifyContent='center' height={12}>
+                                <Image width={60} height={60} alt="img" src={graph} />
+                            </Flex>
+                            <Box width={6} height={6}>
+                                <Image alt="options" src={options} />
+                            </Box>
+                        </Flex>
+                        <Box marginBottom={4} zIndex={5} width={'90%'}>
+                            <Text fontSize={'xs'} fontWeight='bold'>
+                                Semana 3:
+                            </Text>
+                            <Divider  borderColor='orange.500' width={12} borderWidth={2} />
+                            <Text marginTop={2} fontSize={'sm'} color='black'>
+                            Nada de meia dúzia de seguidores novos por semana, <strong>nessa semana você vai dominar as melhores estratégias de crescimento acelerado.</strong>
+                            </Text>
+                        </Box>
+                        <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'95%'} bottom={0} bgColor={'white'} position='absolute' />
+                    </Stack>
                     <WeekInfoBullet url={bounty} text='Vamos multiplicar o seu dinheiro com tráfego pago: você vai aprender a facilitar muito seu sucesso no Instagram investindo da forma correta, sem desperdiçar nem um centavo.' week="4" />
                     <WeekInfoBullet url={shakeHand} text='Na quinta semana vamos fazer a máquina girar, eu vou te ensinar o passo a passo completo para transformar seguidores em clientes pagantes, cobrando o que você merece pelos seus produtos e serviços.' week="5" />
                     <WeekInfoBullet url={starEmoji} text='Essa é a semana da virada, você vai entender como escalar suas vendas no Instagram, se tornar uma referência e deixar a concorrência para trás de uma vez por todas.' week="6" />
                 </Stack>
             </Box>
             <Stack spacing={8} padding={6} alignItems='center' textAlign='center'>
+                <Stack>
                 <Text fontWeight='bold' fontSize='2xl' textAlign='center'>
                     E não é só isso...
                 </Text>
-                <Text>
+                <Text fontSize={'lg'}>
                     Sim, essas 7 semanas vão ser intensas e transformadoras, mas eu vou te entregar muito mais.
                 </Text>
-                <Text>
+                <Text fontSize={'lg'}>
                     Você também vai receber de bônus o curso completo
                 </Text>
+                </Stack>
                 <Stack width={'100%'} alignItems='center' spacing={4}>
-                    <Box>
+                    <Box width={'80%'}>
                         <Image src={anuncios} alt='anuncios' />
                     </Box>
                     <Text fontWeight='bold' fontSize='2xl' textAlign='center'>
@@ -176,7 +224,7 @@ export default function EfeitoPosicionado() {
                     <Image alt="popup1" src={popup5} />
                 </Box>
                 <Stack width={'100%'} alignItems='center' spacing={4}>
-                    <Box>
+                <Box width={'80%'}>
                         <Image alt="popup1" src={gpt} />
                     </Box>
                     <Text fontWeight='bold' fontSize='2xl' textAlign='center'>
@@ -187,10 +235,13 @@ export default function EfeitoPosicionado() {
                     </Text>
                 </Stack>
                 <Text fontWeight='bold' fontSize='xl' textAlign='center'>
-                    …E se, depois disso tudo, você ainda me dissesse que está inseguro, porque não sabe falar com a câmera, não se sente bem verbalizando suas ideias, não se preocupe
+                    …E se, depois disso tudo, você ainda me dissesse que está inseguro, porque não sabe falar com a câmera, não se sente bem verbalizando suas ideias, não se preocupe:
+                </Text>
+                <Text fontWeight='bold' fontSize='xl' textAlign='center'>
+                    Eu incluí também a Masterclass
                 </Text>
                 <Stack width={'100%'} alignItems='center' spacing={4}>
-                    <Box>
+                <Box width={'80%'}>
                         <Image alt="popup1" src={comunicacao} />
                     </Box>
                     <Text fontWeight='bold' fontSize='2xl' textAlign='center'>
@@ -208,7 +259,7 @@ export default function EfeitoPosicionado() {
                         As próximas semanas vão passar de qualquer forma; mas você está a uma escolha de mudar o seu negócio completamente.
                     </Text>
                     <Box>
-                        <Image src={popup1} alt='popup' />
+                        <Image src={popup6} alt='popup' />
                     </Box>
                     <Text>
                         Você vai estar no grupo que mudou o jogo ou no das pessoas que deixaram tudo como está agora?
@@ -217,27 +268,29 @@ export default function EfeitoPosicionado() {
                         Uma realidade diferente é possível, você não chegou tão longe nessa conversa sem motivo nenhum.
                     </Text>
                     <Text>
-                        Você quer mudar, quer mais seguidores, mais reconhecimento e dinheiro, é seu direito querer isso.
+                        Você quer mudar, quer mais seguidores, mais reconhecimento e dinheiro, <strong>é seu direito querer isso.</strong>
                     </Text>
                     <Text>
-                        Eu sei como a concorrência funciona, você talvez já tenha visto outras ofertas de mentoria, mas nós vamos fazer as coisas de um jeito diferente.
+                    Eu vou comprar essa briga junto com você, nós estaremos lado a lado trabalhando pelo seu sucesso no Instagram durante 7 semanas
                     </Text>
                 </Stack>
             </Stack>
             <Stack spacing={8} width={'100%'} alignItems='center'>
                 <Text fontWeight='bold' fontSize='xl' textAlign='center'>
-                    No<Text fontWeight={'extrabold'} fontSize='2xl' textDecor={'underline'} textUnderlineOffset={2} textDecorationColor='orange.500'>Efeito Posicionado,</Text> é isso que você vai levar:
+                    No <Text as='span' textDecor={'underline'} textUnderlineOffset={2} textDecorationColor='orange.500'>Efeito Posicionado,</Text> <Text> é isso que você vai levar:</Text>
                 </Text>
                 <PriceCourse text="Efeito Posicionado (7 MÓDULOS COMPLETOS + 6 SESSÕES DE MENTORIA AO VIVO):" price="R$7.997,00" />
                 <PriceCourse text="Curso Dominando Os Anúncios No Instagram" price="R$697,00" />
-                <PriceCourse text="Curso Chat GPT para Instagram: Produzindo Conteúdo de Forma Rápida, Eficiente E Lucrativa" price="R597,00" />
+                <PriceCourse text="Curso Chat GPT para Instagram: Produzindo Conteúdo de Forma Rápida, Eficiente E Lucrativa" price="R$597,00" />
                 <PriceCourse text="Masterclass Destravando Sua Comunicação No Instagram" price="R$497,00" />
                 <PriceCourse text="Replay das lives Desafio Posicionado Digital" price="R$297,00" />
                 <Text>
                     +OUTROS BÔNUS ESPECIAIS
                 </Text>
             </Stack>
-            <Box marginY={12} width={'100%'} height={12} bgColor='orange.500' />
+            <Flex width={'100%'} marginY={12}>
+                <Timer />
+            </Flex>
             <Stack width={'100%'} paddingX={8} alignItems='center' textAlign={'center'} spacing={8}>
                 <Stack textAlign={'center'} alignItems='center' spacing={0}>
                     <Text fontSize={'sm'}>
@@ -292,7 +345,7 @@ export default function EfeitoPosicionado() {
                     </Box>
                 </Flex>
             </Stack>
-            <FAQ/>
+            <FAQ />
             <Box width={'100%'} height={12} bgColor='orange.500' />
         </Box>
 
