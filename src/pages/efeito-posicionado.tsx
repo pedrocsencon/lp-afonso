@@ -153,7 +153,7 @@ export default function EfeitoPosicionado() {
                             7 semanas
                         </Text>
                     </Box>
-                    <Stack paddingTop={6} spacing={8}>
+                    <Stack paddingTop={6} spacing={0}>
                         <Stack paddingBottom={4} position='relative' alignItems='center'>
                             <Flex zIndex={5} alignItems={'flex-end'} width={'90%'} justify='space-between'>
                                 <Flex width={12} alignItems='center' justifyContent='center' height={12}>
@@ -164,18 +164,27 @@ export default function EfeitoPosicionado() {
                                 </Box>
                             </Flex>
                             <Box marginBottom={4} zIndex={5} width={'90%'}>
-                                <Text fontSize={'xs'} fontWeight='bold'>
+                                <Text fontSize={'x-small'} fontWeight='bold'>
                                     Semana 0:
                                 </Text>
                                 <Divider borderColor='orange.500' width={12} borderWidth={2} />
-                                <Text marginTop={2} fontSize={'sm'} color='black'>O módulo <Text as='span' fontWeight='bold' textColor='orange.500'>O marketing por trás do marketing</Text> foi pensado para solidificar o seu conhecimento, te conduzir, passo a passo, com uma didática acessível, até uma forma profissional de pensar sobre vendas na internet.</Text>
+                                <Text marginTop={2} fontSize={'xs'} color='black'>O módulo <Text as='span' fontWeight='bold' textColor='orange.500'>O marketing por trás do marketing</Text> foi pensado para solidificar o seu conhecimento, te conduzir, passo a passo, com uma didática acessível, até uma forma profissional de pensar sobre vendas na internet.</Text>
                             </Box>
                             <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'95%'} bottom={0} bgColor={'white'} position='absolute' />
                         </Stack>
+                        <Stack width='100%' alignItems='center'>
+                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        </Stack>
                         <WeekInfoBullet url={boxUser} text='Nós vamos montar um perfil mais atraente, desenhado para o seu mercado, que deixa claro para quem chega qual é a essência do seu negócio, e também vou compartilhar com você as bases da estratégia que me permitiu ganhar 180 mil seguidores em apenas 7 meses..' week="1" />
+                        <Stack width='100%' alignItems='center'>
+                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        </Stack>
                         <WeekInfoBullet url={instagram} text='Aqui nós vamos mergulhar a fundo na produção de conteúdo para todos os canais do Instagram. Esqueça os bloqueios criativos e as inseguranças, você vai dominar todos os canais de comunicação do Instagram.' week="2" />
-                        <Stack paddingBottom={4} position='relative' alignItems='center'>
-                            <Flex zIndex={5} alignItems={'flex-end'} width={'90%'} justify='space-between'>
+                        <Stack width='100%' alignItems='center'>
+                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        </Stack>
+                        <Stack paddingBottom={4} position='relative' paddingTop={8} alignItems='center'>
+                        <Flex zIndex={5} alignItems={'flex-end'}  top={-3} position={'absolute'}  width={'90%'} justify='space-between'>
                                 <Flex width={12} alignItems='center' justifyContent='center' height={12}>
                                     <Image width={60} height={60} alt="img" src={graph} />
                                 </Flex>
@@ -184,18 +193,27 @@ export default function EfeitoPosicionado() {
                                 </Box>
                             </Flex>
                             <Box marginBottom={4} zIndex={5} width={'90%'}>
-                                <Text fontSize={'xs'} fontWeight='bold'>
+                                <Text fontSize={'x-small'} fontWeight='bold'>
                                     Semana 3:
                                 </Text>
                                 <Divider borderColor='orange.500' width={12} borderWidth={2} />
-                                <Text marginTop={2} fontSize={'sm'} color='black'>
+                                <Text marginTop={2} fontSize={'xs'} color='black'>
                                     Nada de meia dúzia de seguidores novos por semana, <strong>nessa semana você vai dominar as melhores estratégias de crescimento acelerado.</strong>
                                 </Text>
                             </Box>
-                            <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'95%'} bottom={0} bgColor={'white'} position='absolute' />
+                            <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'100%'} bottom={0} bgColor={'white'} position='absolute' />
+                        </Stack>
+                        <Stack width='100%' alignItems='center'>
+                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
                         </Stack>
                         <WeekInfoBullet url={bounty} text='Vamos multiplicar o seu dinheiro com tráfego pago: você vai aprender a facilitar muito seu sucesso no Instagram investindo da forma correta, sem desperdiçar nem um centavo.' week="4" />
+                        <Stack width='100%' alignItems='center'>
+                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        </Stack>
                         <WeekInfoBullet url={shakeHand} text='Na quinta semana vamos fazer a máquina girar, eu vou te ensinar o passo a passo completo para transformar seguidores em clientes pagantes, cobrando o que você merece pelos seus produtos e serviços.' week="5" />
+                        <Stack width='100%' alignItems='center'>
+                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        </Stack>
                         <WeekInfoBullet url={starEmoji} text='Essa é a semana da virada, você vai entender como escalar suas vendas no Instagram, se tornar uma referência e deixar a concorrência para trás de uma vez por todas.' week="6" />
                     </Stack>
                 </Stack>
