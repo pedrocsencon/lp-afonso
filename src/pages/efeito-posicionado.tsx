@@ -51,21 +51,12 @@ export default function EfeitoPosicionado() {
                     <Image alt="afonsod1" src={afonsod1} />
                 </Box>
                 <Stack spacing={[4, 4, 6]} marginTop={4} marginLeft={[0, 0, 0, 24]} alignItems={['center', 'center', 'center', 'initial']} textAlign={['center', 'center', 'center', 'initial']} width={['100%', '80%', '60%', '50%']}>
-                    <Box marginTop={8} width={['60%', '60%', '40%']}>
+                    <Box marginTop={8} width={['70%', '60%', '40%']}>
                         <Image alt="afonsod1" src={logo} />
                     </Box>
-                    <Stack spacing={0}>
-                        <Text fontSize={['xl', 'xl', '3xl']} lineHeight={1.2} fontWeight='bold'>
-                            7 semanas para transformar o
-                        </Text>
-                        <Text fontSize={['xl', 'xl', '3xl']} lineHeight={1.2} fontWeight='bold'>
-                            seu negócio: Domine o Instagram,
-                        </Text>
-                        <Text fontSize={['xl', 'xl', '3xl']} lineHeight={1.2} fontWeight='bold'>
-                            conquiste milhares de seguidores
-                        </Text>
-                        <Text fontSize={['xl', 'xl', '3xl']} lineHeight={1.2} fontWeight='bold'>
-                            e venda muito todo dia
+                    <Stack spacing={0} width='90%'>
+                        <Text letterSpacing={0.5} fontSize={['22px', 'xl', '3xl']} lineHeight={1.2} fontWeight='extrabold'>
+                        7 semanas para transformar o seu negócio: Domine o Instagram, conquiste milhares de seguidores e venda muito todo dia
                         </Text>
                     </Stack>
                         <Text fontSize={['md', 'sm', 'lg']} width={['90%', '95%', '95%', '70%']}>
@@ -81,7 +72,7 @@ export default function EfeitoPosicionado() {
                 <Text paddingTop={4} fontSize={['xl', 'xl', '2xl', '4xl']} fontWeight='bold'>
                     Tudo pode mudar em 7 semanas
                 </Text>
-                <Stack borderRadius={24} width={['100%', '100%', '100%', '60%']} marginTop={4} spacing={4} backgroundColor={'white'} paddingX={[4, 4, 8, 24]} paddingY={[4, 4, 4, 8]} alignItems='center' textAlign='center'>
+                <Stack borderRadius={24} width={['100%', '100%', '100%', '60%']} marginTop={4} spacing={8} backgroundColor={'white'} paddingX={[4, 4, 8, 24]} paddingY={[4, 4, 4, 8]} alignItems='center' textAlign='center'>
                     <Box width={8} height={8}>
                         <Image alt="messenger" src={messenger} />
                     </Box>
