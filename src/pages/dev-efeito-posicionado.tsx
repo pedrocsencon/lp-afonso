@@ -29,6 +29,7 @@ import Timer from "@/components/Timer";
 import options from '../assets/options.png'
 import { motion } from "framer-motion";
 import { useCallback, useState } from "react";
+import { goTo } from "@/utils";
 
 export default function EfeitoPosicionado() {
     const StackMotion = motion(Stack)
@@ -333,7 +334,7 @@ export default function EfeitoPosicionado() {
                 <Text fontSize={['md', 'md' ,'md' ,'lg']}>
                     Apenas até <strong>19/03</strong> você pode entrar nessa jornada por apenas:
                 </Text>
-                <Stack width={'fit-content'} spacing={0} paddingX={12} paddingY={2} borderRadius={12} borderColor='orange.500' borderWidth={1}>
+                <Stack id='cta-efeito' width={'fit-content'} spacing={0} paddingX={12} paddingY={2} borderRadius={12} borderColor='orange.500' borderWidth={1}>
                     <Text fontSize={['md', 'md' ,'md' ,'lg']}>
                         HOJE
                     </Text>
@@ -344,7 +345,7 @@ export default function EfeitoPosicionado() {
                         (12X DE R$99,40)
                     </Text>
                 </Stack>
-                <ButtonMotion onHoverStart={startHover} onHoverEnd={endHover} id='anim-bg-gradient' initial={{ backgroundPosition: '0%' }} animate={{ backgroundPosition: ['0%', '150%', '0%'], scale: [1, 1.02, 1] }} transition={{ type: 'spring', repeat: hover ? 'once' : Infinity, duration: 1, repeatDelay: 2, repeatType: "reverse", ease: 'easeInOut' }} size='lg' colorScheme='orange' height={16} width={['100%', '95%' ,'75%' ,'30%']}>
+                <ButtonMotion onClick={()=>{goTo('https://pay.kiwify.com.br/6LeuLKG')}} onHoverStart={startHover} onHoverEnd={endHover} id='anim-bg-gradient' initial={{ backgroundPosition: '0%' }} animate={{ backgroundPosition: ['0%', '150%', '0%'], scale: [1, 1.02, 1] }} transition={{ type: 'spring', repeat: hover ? 'once' : Infinity, duration: 1, repeatDelay: 2, repeatType: "reverse", ease: 'easeInOut' }} size='lg' colorScheme='orange' height={16} width={['100%', '95%' ,'75%' ,'30%']}>
               <Stack direction='row'>
                 <Text>QUERO VENDER MUITO</Text>
               </Stack>

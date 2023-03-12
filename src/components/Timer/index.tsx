@@ -1,11 +1,13 @@
 import { Button, Stack, Text } from "@chakra-ui/react";
 import {useTimer} from 'react-timer-hook'
+import {Link} from 'react-scroll'
 
 export default function Timer(){
     const time = new Date('March 19, 2023 23:59:00');
     const { seconds, minutes, hours, days } = useTimer({ expiryTimestamp: time });
 
     return (
+        <Link style={{width: '100%'}} to="cta-efeito" smooth offset={-24}>
         <Stack bgColor={'orange.500'} spacing={[4, 6, 8, 12]} direction='row' width='100%' height={20} alignItems='center' justifyContent='center'>
             <Text textAlign='center' width={[16, 'fit-content', 'fit-content', 'fit-content']} textColor={'white'} fontWeight='extrabold' fontSize={['xs', 'md', '2xl']}>
             ÚLTIMA CHANCE!
@@ -54,6 +56,6 @@ export default function Timer(){
                     AGORA!
                 </Text>
             </Button>
-        </Stack>
+        </Stack></Link>
     )
 }
