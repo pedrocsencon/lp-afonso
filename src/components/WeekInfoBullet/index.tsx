@@ -15,11 +15,11 @@ export default function WeekInfoBullet({ url, text, week }: WeekInfoBulletProps)
                 </Box>
             </Flex>
             <Box marginBottom={4} zIndex={5} width={'90%'}>
-                <Text fontSize={'x-small'} fontWeight='bold'>
+                <Text fontSize={['x-small', 'sm', 'md', 'md']} fontWeight='bold'>
                     Semana {week}:
                 </Text>
                 <Divider borderColor='orange.500' width={12} borderWidth={2} />
-            <Text marginTop={2} fontSize={'xs'} color='black'>{text}</Text>
+            <Text marginTop={2} fontSize={['sm', 'md', 'md', 'lg']} color='black'>{text}</Text>
             </Box>
             <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'100%'} bottom={0} bgColor={'white'} position='absolute'/>
         </Stack>
