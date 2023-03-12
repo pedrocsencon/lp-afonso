@@ -2,7 +2,7 @@ import { Box, Button, Divider, Flex, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 import afonsod1 from '../assets/afonso-d1.png'
-import logo from '../assets/logo-posicionado.png'
+import logoPosicionado from '../assets/logo2.png'
 import messenger from '../assets/messenger-icon.png'
 import popup1 from '../assets/popup1.png'
 import popup2 from '../assets/popup2.png'
@@ -53,7 +53,7 @@ export default function EfeitoPosicionado() {
                 </Box>
                 <Stack spacing={[4, 4, 6]} marginTop={4} marginLeft={[0, 0, 0, 24]} alignItems={['center', 'center', 'center', 'initial']} textAlign={['center', 'center', 'center', 'initial']} width={['100%', '80%', '60%', '50%']}>
                     <Box marginTop={8} width={['70%', '60%', '40%']}>
-                        <Image alt="afonsod1" src={logo} />
+                        <Image alt="logo" src={logoPosicionado} />
                     </Box>
                     <Stack spacing={0} width='90%'>
                         <Text letterSpacing={0.5} fontSize={['22px', 'xl', '3xl']} lineHeight={1.2} fontWeight='extrabold'>
@@ -70,7 +70,7 @@ export default function EfeitoPosicionado() {
                 </Stack>
             </Flex>
             <Stack spacing={6} marginTop={[0, 0, 0, 24]} textAlign={'center'} width={'100%'} alignItems='center' padding={2} backgroundColor='#f3f3f3'>
-                <Text paddingTop={4} fontSize={['xl', 'xl', '2xl', '4xl']} fontWeight='bold'>
+                <Text paddingTop={[4, 4, 4, 12]} fontSize={['xl', 'xl', '2xl', '4xl']} fontWeight='bold'>
                     Tudo pode mudar em 7 semanas
                 </Text>
                 <Stack borderRadius={24} width={['100%', '100%', '100%', '60%']} marginTop={4} spacing={8} backgroundColor={'white'} paddingX={[4, 4, 8, 24]} paddingY={[4, 4, 4, 8]} alignItems='center' textAlign='center'>
