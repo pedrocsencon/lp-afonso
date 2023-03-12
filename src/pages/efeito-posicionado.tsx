@@ -173,15 +173,15 @@ export default function EfeitoPosicionado() {
                             <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'95%'} bottom={0} bgColor={'white'} position='absolute' />
                         </Stack>
                         <Stack width='100%' alignItems='center'>
-                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        <Divider borderColor={'white'} orientation='vertical' height={12} borderLeftWidth={2}/>
                         </Stack>
                         <WeekInfoBullet url={boxUser} text='Nós vamos montar um perfil mais atraente, desenhado para o seu mercado, que deixa claro para quem chega qual é a essência do seu negócio, e também vou compartilhar com você as bases da estratégia que me permitiu ganhar 180 mil seguidores em apenas 7 meses..' week="1" />
                         <Stack width='100%' alignItems='center'>
-                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        <Divider borderColor={'white'} orientation='vertical' height={12} borderLeftWidth={2}/>
                         </Stack>
                         <WeekInfoBullet url={instagram} text='Aqui nós vamos mergulhar a fundo na produção de conteúdo para todos os canais do Instagram. Esqueça os bloqueios criativos e as inseguranças, você vai dominar todos os canais de comunicação do Instagram.' week="2" />
                         <Stack width='100%' alignItems='center'>
-                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        <Divider borderColor={'white'} orientation='vertical' height={12} borderLeftWidth={2}/>
                         </Stack>
                         <Stack paddingBottom={4} position='relative' paddingTop={8} alignItems='center'>
                         <Flex zIndex={5} alignItems={'flex-end'}  top={-3} position={'absolute'}  width={'90%'} justify='space-between'>
@@ -204,15 +204,15 @@ export default function EfeitoPosicionado() {
                             <Box shadow={'lg'} width={'100%'} borderRadius={12} height={'100%'} bottom={0} bgColor={'white'} position='absolute' />
                         </Stack>
                         <Stack width='100%' alignItems='center'>
-                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        <Divider borderColor={'white'} orientation='vertical' height={12} borderLeftWidth={2}/>
                         </Stack>
                         <WeekInfoBullet url={bounty} text='Vamos multiplicar o seu dinheiro com tráfego pago: você vai aprender a facilitar muito seu sucesso no Instagram investindo da forma correta, sem desperdiçar nem um centavo.' week="4" />
                         <Stack width='100%' alignItems='center'>
-                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        <Divider borderColor={'white'} orientation='vertical' height={12} borderLeftWidth={2}/>
                         </Stack>
                         <WeekInfoBullet url={shakeHand} text='Na quinta semana vamos fazer a máquina girar, eu vou te ensinar o passo a passo completo para transformar seguidores em clientes pagantes, cobrando o que você merece pelos seus produtos e serviços.' week="5" />
                         <Stack width='100%' alignItems='center'>
-                        <Divider borderColor={'white'} orientation='vertical' height={16} borderLeftWidth={2}/>
+                        <Divider borderColor={'white'} orientation='vertical' height={12} borderLeftWidth={2}/>
                         </Stack>
                         <WeekInfoBullet url={starEmoji} text='Essa é a semana da virada, você vai entender como escalar suas vendas no Instagram, se tornar uma referência e deixar a concorrência para trás de uma vez por todas.' week="6" />
                     </Stack>
