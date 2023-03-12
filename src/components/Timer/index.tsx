@@ -16,13 +16,13 @@ export default function Timer({top}: {top?: boolean}){
       }
       
     return (
-        <Stack bgColor={'orange.500'} padding={4} spacing={[4, 6, 8, 12]} direction={['column', 'row' ,'row' ,'row']} width='100%' alignItems='center' justifyContent='center'>
+        <Stack bgColor={'orange.500'} padding={4} spacing={[4, 6, 8, 8]} direction={['column', 'row' ,'row' ,'row']} width='100%' alignItems='center' justifyContent='center'>
             <Text textAlign='center' textColor={'white'} fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
             ÚLTIMA CHANCE!
             </Text>
             {top ? 
             
-            <Stack spacing={4} textColor='white'direction={'row'}>
+            <Stack spacing={[4,6,8,8]} textColor='white' direction={'row'}>
             <Stack textAlign='center' spacing={0}>
                 <Text fontWeight='extrabold' fontSize={['2xl', 'md', '2xl']}>
                     {formatTime(days)}
@@ -57,11 +57,13 @@ export default function Timer({top}: {top?: boolean}){
             </Stack>
             <Button onClick={()=>{
             goTo('https://pay.kiwify.com.br/6LeuLKG')
-        }} colorScheme={'whatsapp'} height={12} size={'xs'} flexDir='column'>
-            <Text fontWeight='bold'>GARANTIR</Text>
-            <Text fontWeight='bold'>
+        }} colorScheme={'whatsapp'} height={12} flexDir='column'>
+            <Stack spacing={1} direction={['column', 'column' ,'row' ,'row']}>
+            <Text fontWeight='bold' fontSize={['xs', 'sm', 'md', 'lg']}>GARANTIR</Text>
+            <Text fontWeight='bold' fontSize={['xs', 'sm', 'md', 'lg']}>
             AGORA!
             </Text>
+            </Stack>
         </Button>
         </Stack>
          

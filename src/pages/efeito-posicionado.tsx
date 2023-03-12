@@ -48,10 +48,10 @@ export default function EfeitoPosicionado() {
       <Timer top/>
         <Stack spacing={0}  width={'100%'} alignItems='center'>
             <Flex paddingBottom={12} height={['fit-content', 'fit-content', 'fit-content', '90vh']} id='background' position={'relative'} direction={['column', 'column', 'column', 'row']} width={['100%', '95%', '90%', '90%']} alignItems={'center'} justify={['center', 'center', 'initial']}>
-                <Box position={['relative', 'relative', 'relative', 'absolute']} right={['initial', 'initial', 'initial', '5%']} width={['100%', '80%', '70%', '60%']} zIndex={-2}>
+                <Box position={['relative', 'relative', 'relative', 'absolute']} right={['initial', 'initial', 'initial', '5%']} width={['100%', '80%', '70%', '55%']} zIndex={-2}>
                     <Image alt="afonsod1" src={afonsod1} />
                 </Box>
-                <Stack spacing={[4, 4, 6]} marginTop={4} marginLeft={[0, 0, 0, 24]} alignItems={['center', 'center', 'center', 'initial']} textAlign={['center', 'center', 'center', 'initial']} width={['100%', '80%', '60%', '50%']}>
+                <Stack spacing={[4, 4, 6]} marginTop={4} marginLeft={[0, 0, 0, 32]} alignItems={['center', 'center', 'center', 'initial']} textAlign={['center', 'center', 'center', 'initial']} width={['100%', '80%', '60%', '50%']}>
                     <Box marginTop={8} width={['70%', '60%', '40%']}>
                         <Image alt="logo" src={logoPosicionado} />
                     </Box>
@@ -336,10 +336,10 @@ export default function EfeitoPosicionado() {
                     </Text>
                 </Stack>
                 <Stack textAlign={'center'} spacing={0}>
-                    <Text fontSize={['sm', 'md' ,'md' ,'lg']}>
+                    <Text fontSize={['md', 'lg' ,'lg' ,'xl']} fontWeight='bold'>
                         HOJE, ESSE É O NOSSO VALOR DO PROGRAMA:
                     </Text>
-                    <Text fontWeight={'extrabold'} fontSize={['3xl', '3xl' ,'3xl' ,'4xl']} textDecor={'line-through'}>
+                    <Text fontWeight={'extrabold'} fontSize={['4xl', '4xl' ,'4xl' ,'5xl']} >
                         R$1997,00
                     </Text>
                 </Stack>
