@@ -64,14 +64,9 @@ export default function EfeitoPosicionado() {
                             e venda muito todo dia
                         </Text>
                     </Stack>
-                    <Stack spacing={0} alignItems={['center', 'center', 'center', 'initial']}>
-                        <Text fontSize={['sm', 'sm', 'lg']} width={['95%', '95%', '95%', '70%']}>
-                            <strong>Viralização, explosão de seguidores, visibilidade, autoridade, reconhecimento e vendas;</strong>
-                        </Text>
                         <Text fontSize={['sm', 'sm', 'lg']} width={['90%', '95%', '95%', '70%']}>
-                            Essa mentoria de 7 semanas vai te ensinar o passo a passo para que você se posicione e alcance o sucesso no digital
+                        <Text as='span' textDecor='underline'>Viralização, explosão de seguidores, visibilidade, autoridade, reconhecimento e vendas;</Text> Essa mentoria de 7 semanas vai te ensinar o passo a passo para que você se posicione e alcance o sucesso no digital
                         </Text>
-                    </Stack>
                     <StackMotion display={['none', 'none', 'none', 'flex']} animate={{ y: [0, -2, 2, 0] }} transition={{ type: "spring", stiffness: 100, delay: 0.2, duration: 1, repeat: Infinity }} direction='row' alignItems='center'>
                         <Image alt="chevron" src={chevron}/>
                         <Text textColor='orange.500'>Role para baixo para saber mais</Text>
@@ -292,12 +287,15 @@ export default function EfeitoPosicionado() {
                         Você quer mudar, quer mais seguidores, mais reconhecimento e dinheiro, <strong>é seu direito querer isso.</strong>
                     </Text>
                     <Text>
+                        <strong>Foi para te entregar isso que eu pensei o Efeito Posicionado</strong>
+                    </Text>
+                    <Text>
                         Eu vou comprar essa briga junto com você, nós estaremos lado a lado trabalhando pelo seu sucesso no Instagram durante 7 semanas
                     </Text>
                 </Stack>
             </Stack>
             <Stack spacing={8} width={['100%', '100%', '70%', '40%']} alignItems='center'>
-                <Text fontWeight='bold' fontSize={['xl', 'xl', 'xl', '2xl']} textAlign='center'>
+                <Text paddingY={[4, 4, 6, 8]} fontWeight='bold' fontSize={['2xl', '2xl', '2xl', '3xl']} textAlign='center'>
                     No <Text as='span' textDecor={'underline'} textUnderlineOffset={2} textDecorationColor='orange.500'>Efeito Posicionado,</Text> <Text> é isso que você vai levar:</Text>
                 </Text>
                 <PriceCourse text="Efeito Posicionado (7 MÓDULOS COMPLETOS + 6 SESSÕES DE MENTORIA AO VIVO):" price="R$7.997,00" />
