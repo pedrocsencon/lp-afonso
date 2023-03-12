@@ -7,11 +7,11 @@ export default function WeekInfoBullet({ url, text, week }: WeekInfoBulletProps)
     return (
         <Stack paddingBottom={4} position='relative' alignItems='center'>
             <Flex zIndex={5} alignItems={'flex-end'} width={'90%'} justify='space-between'>
-                <Box width={12} height={12}>
-                    <Image alt="img" src={url} />
-                </Box>
+                <Flex width={12} alignItems='center' justifyContent='center' height={12}>
+                    <Image width={60} height={60} alt="img" src={url} />
+                </Flex>
                 <Box width={6} height={6}>
-                    <Image alt="options" src={options} />
+                    <Image  alt="options" src={options} />
                 </Box>
             </Flex>
             <Box marginBottom={4} zIndex={5} width={'90%'}>
