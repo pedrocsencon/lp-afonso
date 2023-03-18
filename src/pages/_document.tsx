@@ -12,6 +12,7 @@ export default function Document() {
         <meta name="keywords" content="Next.JS, Typescript" />
         <meta httpEquiv="cache-control" content="public" />
         <meta name="copyright" content="© 2023 Afonso Molina" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
         <meta name="generator" content="Next.JS" />
         <meta name="facebook-domain-verification" content="04u1ac8l35g1lyub7kzj6vro998hyq" />
         <meta name="rating" content="general" />
