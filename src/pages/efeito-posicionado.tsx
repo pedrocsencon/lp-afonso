@@ -44,13 +44,13 @@ export default function EfeitoPosicionado() {
         height: '500',
         width: '100%',
         playerVars: {
-          autoplay: 1,
-          disablekd: 1,
-          modestbranding: 1,
-          rel: 0,
-          controls: 0,
+            autoplay: 1,
+            disablekd: 1,
+            modestbranding: 1,
+            rel: 0,
+            controls: 0,
         },
-      };
+    };
     return (
 
         <>
@@ -81,20 +81,20 @@ export default function EfeitoPosicionado() {
                         </StackMotion>
                     </Stack>
                 </Flex>
-              
+
                 <Stack spacing={6} marginTop={[0, 0, 0, 24]} textAlign={'center'} width={'100%'} alignItems='center' padding={6} backgroundColor='#f3f3f3'>
-                <Text letterSpacing={0.5} fontSize={['22px', 'xl', '3xl']} lineHeight={1.2} fontWeight='extrabold'>
-                                Dê play no vídeo abaixo:
-                            </Text>
+                    <Text letterSpacing={0.5} fontSize={['22px', 'xl', '3xl']} lineHeight={1.2} fontWeight='extrabold'>
+                        Dê play no vídeo abaixo:
+                    </Text>
                     <Flex justifyContent='center' alignItems='center' width='100%' position='relative'>
-                        <Box pointerEvents='none' height={'500px'} width={'248px'} left={'50%'}  transform={'translateX(-50%)'} position='absolute' zIndex={2000}>
-                        <Image alt="iphone-case" src={iphone} />
+                        <Box pointerEvents='none' height={'500px'} width={'248px'} left={'50%'} transform={'translateX(-50%)'} position='absolute' zIndex={2000}>
+                            <Image alt="iphone-case" src={iphone} />
                         </Box>
-                        <Box style={{overflow: 'hidden', overflowBlock: 'hidden'}} width={'245px'} height='500px' overflow={'hidden'} textOverflow={'hidden'} borderRadius={56}>
-                        <Youtube
-                            opts={opts}
-                            videoId="eujLmA2XdWQ"
-                        />
+                        <Box style={{ overflow: 'hidden', overflowBlock: 'hidden' }} width={'245px'} height='500px' overflow={'hidden'} textOverflow={'hidden'} borderRadius={70}>
+                            <Youtube
+                                opts={opts}
+                                videoId="eujLmA2XdWQ"
+                            />
                         </Box>
                     </Flex>
                     <Text paddingTop={[4, 4, 4, 12]} fontSize={['xl', 'xl', '2xl', '4xl']} fontWeight='bold'>
