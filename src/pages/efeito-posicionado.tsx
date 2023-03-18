@@ -90,7 +90,7 @@ export default function EfeitoPosicionado() {
                         <Box pointerEvents='none' height={'500px'} width={'248px'} left={'50%'} transform={'translateX(-50%)'} position='absolute' zIndex={2000}>
                             <Image alt="iphone-case" src={iphone} />
                         </Box>
-                        <Box style={{ overflow: 'hidden', overflowBlock: 'hidden' }} width={'245px'} height='500px' overflow={'hidden'} textOverflow={'hidden'} borderRadius={70}>
+                        <Box style={{ overflow: 'hidden', overflowBlock: 'hidden' }} width={'245px'} height='500px' overflow={'hidden'} textOverflow={'hidden'} position='relative' borderRadius={70}>
                             <Youtube
                                 opts={opts}
                                 videoId="eujLmA2XdWQ"
