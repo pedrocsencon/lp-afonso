@@ -182,7 +182,7 @@ export default function EfeitoPosicionado() {
                         </Box>
                         <Stack paddingTop={6} spacing={0}>
                             <Flex position='relative' height={'20rem'}>
-                                <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={'75%'} position='relative' alignItems='center'>
+                                <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']} position='relative' alignItems='center'>
                                     <Flex zIndex={5} alignItems={'flex-end'} top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                                         <Flex width={12} alignItems='center' justifyContent='center' height={12}>
                                             <Image width={60} height={60} alt="img" src={brain} />
@@ -206,7 +206,7 @@ export default function EfeitoPosicionado() {
 
                             <WeekInfoBullet pos="right" url={instagram} text='Aqui nós vamos mergulhar a fundo na produção de conteúdo para todos os canais do Instagram. Esqueça os bloqueios criativos e as inseguranças, você vai dominar todos os canais de comunicação do Instagram.' week="2" />
                             <Flex justifyContent='right' position='relative' height={'20rem'}>
-                                <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={'75%'} position='relative' alignItems='center'>
+                                <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']} position='relative' alignItems='center'>
                                     <Flex zIndex={5} alignItems={'flex-end'} top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                                         <Flex width={12} alignItems='center' justifyContent='center' height={12}>
                                             <Image width={60} height={60} alt="img" src={graph} />

@@ -7,7 +7,7 @@ export default function WeekInfoBullet({ url, text, week, pos }: WeekInfoBulletP
     if(pos === 'last'){
         return (
             <Flex position='relative' height={'15rem'}>
-                <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={'75%'} position='relative' alignItems='center'>
+                <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']} position='relative' alignItems='center'>
                 <Flex zIndex={5} alignItems={'flex-end'}  top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                     <Flex width={12} alignItems='center' justifyContent='center' height={12}>
                         <Image width={60} height={60} alt="img" src={url} />
@@ -31,7 +31,7 @@ export default function WeekInfoBullet({ url, text, week, pos }: WeekInfoBulletP
     if(pos === 'right'){
     return (
         <Flex position='relative' height={'20rem'}>
-            <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={'75%'} position='relative' alignItems='center'>
+            <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']} position='relative' alignItems='center'>
             <Flex zIndex={5} alignItems={'flex-end'}  top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                 <Flex width={12} alignItems='center' justifyContent='center' height={12}>
                     <Image width={60} height={60} alt="img" src={url} />
@@ -56,7 +56,7 @@ export default function WeekInfoBullet({ url, text, week, pos }: WeekInfoBulletP
    if(pos === 'left'){
     return (
         <Flex justifyContent='right' position='relative' height={'20rem'}>
-            <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={'75%'} position='relative' alignItems='center'>
+            <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']}  position='relative' alignItems='center'>
             <Flex zIndex={5} alignItems={'flex-end'}  top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                 <Flex width={12} alignItems='center' justifyContent='center' height={12}>
                     <Image width={60} height={60} alt="img" src={url} />
