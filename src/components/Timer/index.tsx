@@ -5,7 +5,7 @@ import { useMemo } from "react";
 import { goTo } from "@/utils";
 
 export default function Timer({top}: {top?: boolean}){
-    const time = new Date('March 19, 2023 23:59:00');
+    const time = new Date('August 17, 2023 23:59:00');
     const { seconds, minutes, hours, days } = useTimer({ expiryTimestamp: time });
    
     function formatTime(time: number) {

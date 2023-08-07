@@ -83,20 +83,6 @@ export default function EfeitoPosicionado() {
                 </Flex>
 
                 <Stack spacing={6} marginTop={[0, 0, 0, 24]} textAlign={'center'} width={'100%'} alignItems='center' padding={6} backgroundColor='#f3f3f3'>
-                    <Text letterSpacing={0.5} fontSize={['22px', 'xl', '3xl']} lineHeight={1.2} fontWeight='extrabold'>
-                        Dê play no vídeo abaixo:
-                    </Text>
-                    <Flex justifyContent='center' alignItems='center' width='100%' position='relative'>
-                        <Box pointerEvents='none' height={'500px'} width={'248px'} left={'50%'} transform={'translateX(-50%)'} position='absolute' zIndex={2000}>
-                            <Image alt="iphone-case" src={iphone} />
-                        </Box>
-                        <Box style={{ overflow: 'hidden', overflowBlock: 'hidden' }} width={'245px'} height='500px' overflow={'hidden'} textOverflow={'hidden'} position='relative' borderRadius={70}>
-                            <Youtube
-                                opts={opts}
-                                videoId="eujLmA2XdWQ"
-                            />
-                        </Box>
-                    </Flex>
                     <Text paddingTop={[4, 4, 4, 12]} fontSize={['xl', 'xl', '2xl', '4xl']} fontWeight='bold'>
                         Tudo pode mudar em 7 semanas
                     </Text>
@@ -328,7 +314,7 @@ export default function EfeitoPosicionado() {
                     </Stack>
                 </Stack>
                 <Stack paddingTop={8} spacing={8} width={['100%', '100%', '70%', '40%']} alignItems='center'>
-                    <Text paddingY={[4, 4, 6, 8]} fontWeight='bold' fontSize={['2xl', '2xl', '2xl', '3xl']} textAlign='center'>
+                    <Text paddingY={[4, 4, 6, 8]} fontWeight='bold' fontSize={['3xl', '2xl', '2xl', '3xl']} textAlign='center'>
                         No <Text as='span' textDecor={'underline'} textUnderlineOffset={2} textDecorationColor='orange.500'>Efeito Posicionado,</Text> <Text> é isso que você vai levar:</Text>
                     </Text>
                     <PriceCourse text="Efeito Posicionado (7 MÓDULOS COMPLETOS + 6 SESSÕES DE MENTORIA AO VIVO):" price="R$7.997,00" />
@@ -336,7 +322,7 @@ export default function EfeitoPosicionado() {
                     <PriceCourse text="Curso Chat GPT para Instagram: Produzindo Conteúdo de Forma Rápida, Eficiente E Lucrativa" price="R$597,00" />
                     <PriceCourse text="Masterclass Destravando Sua Comunicação No Instagram" price="R$497,00" />
                     <PriceCourse text="Replay das lives Desafio Posicionado Digital" price="R$297,00" />
-                    <Text paddingBottom={8}>
+                    <Text paddingBottom={8} fontSize={'2xl'} fontWeight='bold'>
                         +OUTROS BÔNUS ESPECIAIS
                     </Text>
                 </Stack>
@@ -345,41 +331,44 @@ export default function EfeitoPosicionado() {
                 </Flex>
                 <Stack width={'100%'} paddingX={4} paddingTop={8} alignItems='center' textAlign={'center'} spacing={[8, 8, 8, 12]}>
                     <Stack textAlign={'center'} alignItems='center' spacing={0}>
-                        <Text fontSize={['sm', 'md', 'md', 'lg']}>
+                        <Text fontSize={'2xl'} fontWeight='bold'>
                             TOTAL:
                         </Text>
-                        <Text fontWeight={'extrabold'} fontSize={['3xl', '3xl', '3xl', '4xl']} textDecor={'line-through'}>
+                        <Text fontWeight={'extrabold'} fontSize={['3xl', '4xl']} textDecor={'line-through'}>
                             R$10.085,00
                         </Text>
                     </Stack>
                     <Stack textAlign={'center'} spacing={0}>
-                        <Text fontSize={['md', 'lg', 'lg', 'xl']} fontWeight='bold'>
+                        <Text fontSize={'xl'} fontWeight='bold'>
                             HOJE, ESSE É O NOSSO VALOR DO PROGRAMA:
                         </Text>
-                        <Text fontWeight={'extrabold'} fontSize={['4xl', '4xl', '4xl', '5xl']} >
+                        <Text fontWeight={'extrabold'} fontSize={'5xl'} >
                             R$1.997,00
                         </Text>
                     </Stack>
-                    <Text fontSize={['md', 'md', 'lg', '2xl']}>
-                        Mas essa é a primeira turma online do <Text as='span' fontWeight={'extrabold'} textDecor={'underline'} textUnderlineOffset={2} textDecorationColor='orange.500'>Efeito Posicionado,</Text> <strong>então eu decidi ir além</strong>.
+                    <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
+                        Essa condição provavelmente nunca mais será repetida. 
                     </Text>
-                    <Text fontSize={['md', 'md', 'lg', '2xl']}>
-                        Apenas até <strong>19/03</strong> você pode entrar nessa jornada por apenas:
+                    <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
+                    <strong>Aproveite essa oportunidade única, e venha conquistar o seu lugar no digital.</strong>.
+                    </Text>
+                    <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
+                        Apenas até <strong>17/08</strong> você pode entrar nessa jornada por apenas:
                     </Text>
                     <Stack id='cta-efeito' width={'fit-content'} spacing={0} paddingX={12} paddingY={2} borderRadius={12} borderColor='orange.500' borderWidth={1}>
-                        <Text fontSize={['md', 'md', 'md', 'xl']}>
+                        <Text fontWeight='bold' fontSize={'3xl'}>
                             HOJE
                         </Text>
-                        <Text fontWeight={'extrabold'} fontSize={['4xl', '4xl', '4xl', '5xl']} textColor='orange.500'>
+                        <Text fontWeight={'extrabold'} fontSize={'6xl'} textColor='orange.500'> 
                             R$997,00
                         </Text>
-                        <Text fontWeight='bold' fontSize={['sm', 'sm', 'sm', 'md']}>
+                        <Text fontWeight='bold' fontSize={'xl'}>
                             (12X DE R$99,40)
                         </Text>
                     </Stack>
                     <Button onClick={() => { goTo('https://pay.kiwify.com.br/6LeuLKG') }} id='anim-bg-gradient' size='lg' colorScheme='orange' height={16} width={['100%', '95%', '75%', '30%']}>
                         <Stack direction='row'>
-                            <Text>QUERO VENDER MUITO</Text>
+                            <Text fontSize='xl'>QUERO VENDER MUITO</Text>
                         </Stack>
                     </Button>
                 </Stack>
