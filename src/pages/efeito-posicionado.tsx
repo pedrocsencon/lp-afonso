@@ -167,7 +167,7 @@ export default function EfeitoPosicionado() {
                             </Text>
                         </Box>
                         <Stack paddingTop={6} spacing={0}>
-                            <Flex position='relative' height={'20rem'}>
+                            <Flex position='relative' height={'18rem'}>
                                 <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']} position='relative' alignItems='center'>
                                     <Flex zIndex={5} alignItems={'flex-end'} top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                                         <Flex width={12} alignItems='center' justifyContent='center' height={12}>
@@ -188,10 +188,10 @@ export default function EfeitoPosicionado() {
                                 </Stack>
                                 <Flex right={50} top={75} position={'absolute'} width={'250px'} height={'250px'} borderColor='white' borderRadius={'md'} borderTopWidth={3} borderRightWidth={3} />
                             </Flex>
-                            <WeekInfoBullet pos="left" url={boxUser} text='Nós vamos montar um perfil mais atraente, desenhado para o seu mercado, que deixa claro para quem chega qual é a essência do seu negócio, e também vou compartilhar com você as bases da estratégia que me permitiu ganhar 180 mil seguidores em apenas 7 meses...' week="1" />
+                            <WeekInfoBullet height="19rem" pos="left" url={boxUser} text='Nós vamos montar um perfil mais atraente, desenhado para o seu mercado, que deixa claro para quem chega qual é a essência do seu negócio, e também vou compartilhar com você as bases da estratégia que me permitiu ganhar 180 mil seguidores em apenas 7 meses...' week="1" />
 
-                            <WeekInfoBullet pos="right" url={instagram} text='Aqui nós vamos mergulhar a fundo na produção de conteúdo para todos os canais do Instagram. Esqueça os bloqueios criativos e as inseguranças, você vai dominar todos os canais de comunicação do Instagram.' week="2" />
-                            <Flex justifyContent='right' position='relative' height={'20rem'}>
+                            <WeekInfoBullet height="17rem" pos="right" url={instagram} text='Aqui nós vamos mergulhar a fundo na produção de conteúdo para todos os canais do Instagram. Esqueça os bloqueios criativos e as inseguranças, você vai dominar todos os canais de comunicação do Instagram.' week="2" />
+                            <Flex justifyContent='right' position='relative' height={'15rem'}>
                                 <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']} position='relative' alignItems='center'>
                                     <Flex zIndex={5} alignItems={'flex-end'} top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                                         <Flex width={12} alignItems='center' justifyContent='center' height={12}>
@@ -213,11 +213,11 @@ export default function EfeitoPosicionado() {
                                 <Flex left={50} top={75} position={'absolute'} width={'250px'} height={'250px'} borderColor='white' borderRadius={'md'} borderTopWidth={3} borderLeftWidth={3} />
                             </Flex>
 
-                            <WeekInfoBullet pos="right" url={bounty} text='Vamos multiplicar o seu dinheiro com tráfego pago: você vai aprender a facilitar muito seu sucesso no Instagram investindo da forma correta, sem desperdiçar nem um centavo.' week="4" />
+                            <WeekInfoBullet height="16rem" pos="right" url={bounty} text='Vamos multiplicar o seu dinheiro com tráfego pago: você vai aprender a facilitar muito seu sucesso no Instagram investindo da forma correta, sem desperdiçar nem um centavo.' week="4" />
 
-                            <WeekInfoBullet pos="left" url={shakeHand} text='Na quinta semana vamos fazer a máquina girar, eu vou te ensinar o passo a passo completo para transformar seguidores em clientes pagantes, cobrando o que você merece pelos seus produtos e serviços.' week="5" />
+                            <WeekInfoBullet height="18rem" pos="left" url={shakeHand} text='Na quinta semana vamos fazer a máquina girar, eu vou te ensinar o passo a passo completo para transformar seguidores em clientes pagantes, cobrando o que você merece pelos seus produtos e serviços.' week="5" />
 
-                            <WeekInfoBullet pos="last" url={starEmoji} text='Essa é a semana da virada, você vai entender como escalar suas vendas no Instagram, se tornar uma referência e deixar a concorrência para trás de uma vez por todas.' week="6" />
+                            <WeekInfoBullet height="12rem" pos="last" url={starEmoji} text='Essa é a semana da virada, você vai entender como escalar suas vendas no Instagram, se tornar uma referência e deixar a concorrência para trás de uma vez por todas.' week="6" />
                         </Stack>
                     </Stack>
                 </Stack>
@@ -226,10 +226,10 @@ export default function EfeitoPosicionado() {
                         <Text fontWeight='bold' fontSize={['2xl', '2xl', '3xl', '4xl']} textAlign='center'>
                             E não é só isso...
                         </Text>
-                        <Text fontSize={['sm', 'md', 'lg', 'xl']}>
+                        <Text fontSize={['md', 'lg', 'xl']}>
                             Sim, essas 7 semanas vão ser intensas e transformadoras, mas eu vou te entregar muito mais.
                         </Text>
-                        <Text fontSize={['sm', 'md', 'lg', 'xl']}>
+                        <Text fontSize={['md', 'lg', 'xl']}>
                             Você também vai receber de bônus o curso completo
                         </Text>
                     </Stack>
@@ -286,14 +286,14 @@ export default function EfeitoPosicionado() {
                             </Text>
                         </Stack>
                     </Stack>
-                    <Text paddingY={6} fontWeight='bold' fontSize={['md', 'md', 'lg', 'xl']} textAlign='center'>
+                    <Text paddingY={4} fontWeight='bold' fontSize={['lg', 'xl']} textAlign='center'>
                         Esse é o momento da decisão.
                     </Text>
                     <Stack fontSize={['md', 'lg', 'lg', 'xl']} alignItems='center' spacing={6} padding={[4, 4, 8, 12]} borderRadius={12} bgColor={'white'} shadow='2xl'>
                         <Text>
                             As próximas semanas vão passar de qualquer forma; mas você está a uma escolha de mudar o seu negócio completamente.
                         </Text>
-                        <Box width='70%'>
+                        <Box width='100%'>
                             <Image src={popup6} alt='popup' />
                         </Box>
                         <Text>

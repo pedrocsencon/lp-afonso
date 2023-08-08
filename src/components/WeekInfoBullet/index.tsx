@@ -3,10 +3,10 @@ import Image from "next/image";
 import options from '../../assets/options.png'
 import { WeekInfoBulletProps } from "./types";
 
-export default function WeekInfoBullet({ url, text, week, pos }: WeekInfoBulletProps) {
+export default function WeekInfoBullet({ url, text, week, pos, height }: WeekInfoBulletProps) {
     if(pos === 'last'){
         return (
-            <Flex position='relative' height={'15rem'}>
+            <Flex position='relative' height={height}>
                 <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']} position='relative' alignItems='center'>
                 <Flex zIndex={5} alignItems={'flex-end'}  top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                     <Flex width={12} alignItems='center' justifyContent='center' height={12}>
@@ -30,7 +30,7 @@ export default function WeekInfoBullet({ url, text, week, pos }: WeekInfoBulletP
        }
     if(pos === 'right'){
     return (
-        <Flex position='relative' height={'20rem'}>
+        <Flex position='relative' height={height}>
             <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']} position='relative' alignItems='center'>
             <Flex zIndex={5} alignItems={'flex-end'}  top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                 <Flex width={12} alignItems='center' justifyContent='center' height={12}>
@@ -55,7 +55,7 @@ export default function WeekInfoBullet({ url, text, week, pos }: WeekInfoBulletP
    }
    if(pos === 'left'){
     return (
-        <Flex justifyContent='right' position='relative' height={'20rem'}>
+        <Flex justifyContent='right' position='relative' height={height}>
             <Stack zIndex={1500} paddingBottom={4} paddingTop={8} height='fit-content' width={['100%', '85%', '75%']}  position='relative' alignItems='center'>
             <Flex zIndex={5} alignItems={'flex-end'}  top={-3} position={'absolute'} width={'90%'} justify='space-between'>
                 <Flex width={12} alignItems='center' justifyContent='center' height={12}>

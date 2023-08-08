@@ -5,4 +5,5 @@ export type WeekInfoBulletProps = {
     text: string
     pos: 'right' | 'left' | 'last'
     week: string
+    height: string
 }
