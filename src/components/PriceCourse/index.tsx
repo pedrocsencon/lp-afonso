@@ -7,7 +7,7 @@ export default function PriceCourse({price, text}: PriceCourseProps){
         <Text fontSize='lg' fontWeight='bold'>
         {text}
     </Text>
-    <Text fontWeight='bold' fontSize='4xl' textAlign='center'>
+    <Text fontWeight='bold' fontSize={['4xl', '4xl', '5xl']} textAlign='center'>
             {price}
         </Text>
         </Stack>

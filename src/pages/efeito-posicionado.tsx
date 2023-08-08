@@ -334,7 +334,7 @@ export default function EfeitoPosicionado() {
                         <Text fontSize={'2xl'} fontWeight='bold'>
                             TOTAL:
                         </Text>
-                        <Text fontWeight={'extrabold'} fontSize={['3xl', '4xl']} textDecor={'line-through'}>
+                        <Text fontWeight={'extrabold'} fontSize={['3xl', '4xl', '5xl']} textDecor={'line-through'}>
                             R$10.085,00
                         </Text>
                     </Stack>
@@ -342,24 +342,15 @@ export default function EfeitoPosicionado() {
                         <Text fontSize={'xl'} fontWeight='bold'>
                             HOJE, ESSE É O NOSSO VALOR DO PROGRAMA:
                         </Text>
-                        <Text fontWeight={'extrabold'} fontSize={'4xl'} >
+                        <Text fontWeight={'extrabold'} fontSize={['4xl', '5xl', '5xl']} >
                             R$1.997,00
                         </Text>
                     </Stack>
-                    {/* <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
-                        Essa condição provavelmente nunca mais será repetida. 
-                    </Text>
-                    <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
-                    <strong>Aproveite essa oportunidade única, e venha conquistar o seu lugar no digital.</strong>.
-                    </Text>
-                    <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
-                        Apenas até <strong>17/08</strong> você pode entrar nessa jornada por apenas:
-                    </Text> */}
 
-<Text fontWeight='bold' fontSize={'2xl'}>
+<Text fontWeight='bold' fontSize={['2xl', '2xl' ,'3xl']}>
                         VALOR HOJE:
                     </Text>
-                    <Stack id='cta-efeito' width={'fit-content'} spacing={0} paddingX={8} paddingY={2} borderRadius={12} borderColor='orange.500' borderWidth={1}>
+                    <Stack id='cta-efeito' width={'fit-content'} spacing={0} paddingX={[8, 8, 12]} paddingY={2} borderRadius={12} borderColor='orange.500' borderWidth={1}>
                         <Text fontWeight={'extrabold'} fontSize={'6xl'} textColor='orange.500'> 
                             R$997,00
                         </Text>

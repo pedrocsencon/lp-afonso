@@ -3,9 +3,9 @@ import { FaqItemProps } from "./types";
 
 export default function FaqItem({ text, title}: FaqItemProps){
     return (
-        <AccordionItem >  
+        <AccordionItem marginY={2}>  
         <Text>
-            <AccordionButton borderRadius={4} background='orange.500' color={'white'} _expanded={{ bg: 'orange.500', color: 'white' }}>
+            <AccordionButton borderRadius={4} background='orange.500' color={'white'} _expanded={{ bg: 'orange.600', color: 'white' }}>
                 <Box as="span" flex='1' textAlign='left'>
                     <Text fontWeight={'bold'}>{title}</Text>
                 </Box>
