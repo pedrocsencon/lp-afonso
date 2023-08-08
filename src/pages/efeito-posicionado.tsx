@@ -342,11 +342,11 @@ export default function EfeitoPosicionado() {
                         <Text fontSize={'xl'} fontWeight='bold'>
                             HOJE, ESSE É O NOSSO VALOR DO PROGRAMA:
                         </Text>
-                        <Text fontWeight={'extrabold'} fontSize={'5xl'} >
+                        <Text fontWeight={'extrabold'} fontSize={'4xl'} >
                             R$1.997,00
                         </Text>
                     </Stack>
-                    <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
+                    {/* <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
                         Essa condição provavelmente nunca mais será repetida. 
                     </Text>
                     <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
@@ -354,11 +354,12 @@ export default function EfeitoPosicionado() {
                     </Text>
                     <Text fontSize={['lg', 'lg', 'lg', '2xl']}>
                         Apenas até <strong>17/08</strong> você pode entrar nessa jornada por apenas:
+                    </Text> */}
+
+<Text fontWeight='bold' fontSize={'2xl'}>
+                        VALOR HOJE:
                     </Text>
-                    <Stack id='cta-efeito' width={'fit-content'} spacing={0} paddingX={12} paddingY={2} borderRadius={12} borderColor='orange.500' borderWidth={1}>
-                        <Text fontWeight='bold' fontSize={'3xl'}>
-                            HOJE
-                        </Text>
+                    <Stack id='cta-efeito' width={'fit-content'} spacing={0} paddingX={8} paddingY={2} borderRadius={12} borderColor='orange.500' borderWidth={1}>
                         <Text fontWeight={'extrabold'} fontSize={'6xl'} textColor='orange.500'> 
                             R$997,00
                         </Text>
