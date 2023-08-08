@@ -5,7 +5,7 @@ export default function FaqItem({ text, title}: FaqItemProps){
     return (
         <AccordionItem >  
         <Text>
-            <AccordionButton borderRadius={4} _expanded={{ bg: 'orange.500', color: 'white' }}>
+            <AccordionButton borderRadius={4} background='orange.500' color={'white'} _expanded={{ bg: 'orange.500', color: 'white' }}>
                 <Box as="span" flex='1' textAlign='left'>
                     <Text fontWeight={'bold'}>{title}</Text>
                 </Box>
@@ -13,7 +13,7 @@ export default function FaqItem({ text, title}: FaqItemProps){
             </AccordionButton>
         </Text>
         <AccordionPanel pb={4}>
-            <Text textColor={'gray.500'}>
+            <Text textColor={'gray.900'}>
             {text}
             </Text>
         </AccordionPanel>
