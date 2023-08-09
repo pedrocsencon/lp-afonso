@@ -293,7 +293,7 @@ export default function EfeitoPosicionado() {
                         <Text>
                             As próximas semanas vão passar de qualquer forma; mas você está a uma escolha de mudar o seu negócio completamente.
                         </Text>
-                        <Box width={['100%', '80%', '70%']}>
+                        <Box width={['100%', '70%', '50%']}>
                             <Image src={popup6} alt='popup' />
                         </Box>
                         <Text>
