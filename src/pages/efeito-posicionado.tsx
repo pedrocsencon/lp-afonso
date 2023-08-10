@@ -340,7 +340,7 @@ export default function EfeitoPosicionado() {
                     </Stack>
                     <Stack textAlign={'center'} spacing={0}>
                         <Text fontSize={'xl'} fontWeight='bold'>
-                            HOJE, ESSE É O NOSSO VALOR DO PROGRAMA:
+                            ESSE É O NOSSO VALOR DO PROGRAMA:
                         </Text>
                         <Text fontWeight={'extrabold'} fontSize={['4xl', '5xl', '5xl']} >
                             R$1.997,00
